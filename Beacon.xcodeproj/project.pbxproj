@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
 		7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632B2415F9E400D1323A /* AppDelegate.swift */; };
 		7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632D2415F9E400D1323A /* SceneDelegate.swift */; };
 		7FE163302415F9E400D1323A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632F2415F9E400D1323A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		7FE163282415F9E400D1323A /* Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE1632B2415F9E400D1323A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE1632D2415F9E400D1323A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F5794B4241CD0AF00BCD5CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7FE163362415F9E500D1323A /* LaunchScreen.storyboard */,
+				7FE163312415F9E400D1323A /* Main.storyboard */,
+				7F5794B5241CD0D000BCD5CE /* Chat.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		7FE1631F2415F9E400D1323A = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +68,11 @@
 		7FE1632A2415F9E400D1323A /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				7F5794B4241CD0AF00BCD5CE /* Storyboards */,
 				7FE1632B2415F9E400D1323A /* AppDelegate.swift */,
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
 				7FE1632F2415F9E400D1323A /* ViewController.swift */,
-				7FE163312415F9E400D1323A /* Main.storyboard */,
 				7FE163342415F9E500D1323A /* Assets.xcassets */,
-				7FE163362415F9E500D1323A /* LaunchScreen.storyboard */,
 				7FE163392415F9E500D1323A /* Info.plist */,
 			);
 			path = Beacon;
@@ -127,6 +138,7 @@
 			files = (
 				7FE163382415F9E500D1323A /* LaunchScreen.storyboard in Resources */,
 				7FE163352415F9E500D1323A /* Assets.xcassets in Resources */,
+				7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */,
 				7FE163332415F9E400D1323A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
