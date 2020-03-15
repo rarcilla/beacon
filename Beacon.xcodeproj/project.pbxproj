@@ -3,21 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
+		7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */; };
+		7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE19241DAECA00011F37 /* NewViewController.swift */; };
 		7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632B2415F9E400D1323A /* AppDelegate.swift */; };
 		7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632D2415F9E400D1323A /* SceneDelegate.swift */; };
 		7FE163302415F9E400D1323A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632F2415F9E400D1323A /* ViewController.swift */; };
 		7FE163332415F9E400D1323A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE163312415F9E400D1323A /* Main.storyboard */; };
 		7FE163352415F9E500D1323A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE163342415F9E500D1323A /* Assets.xcassets */; };
 		7FE163382415F9E500D1323A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE163362415F9E500D1323A /* LaunchScreen.storyboard */; };
+		80AB99D0B8BA466623F10233 /* libPods-Beacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA6F25B9AC4619E1637AC16 /* libPods-Beacon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.release.xcconfig"; path = "Target Support Files/Pods-Beacon/Pods-Beacon.release.xcconfig"; sourceTree = "<group>"; };
 		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		7FCEFE19241DAECA00011F37 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		7FE163282415F9E400D1323A /* Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE1632B2415F9E400D1323A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE1632D2415F9E400D1323A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		7FE163342415F9E500D1323A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FE163372415F9E500D1323A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FE163392415F9E500D1323A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C0D60A49B69D76A584853F /* Pods-Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.debug.xcconfig"; path = "Target Support Files/Pods-Beacon/Pods-Beacon.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA6F25B9AC4619E1637AC16 /* libPods-Beacon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Beacon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +41,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AB99D0B8BA466623F10233 /* libPods-Beacon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EA0C2B36CBA4E40DC1BBAB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDA6F25B9AC4619E1637AC16 /* libPods-Beacon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F5794B4241CD0AF00BCD5CE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +71,8 @@
 			children = (
 				7FE1632A2415F9E400D1323A /* Beacon */,
 				7FE163292415F9E400D1323A /* Products */,
+				CC20C80AC4E4523DC31ED90C /* Pods */,
+				1EA0C2B36CBA4E40DC1BBAB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,10 +91,21 @@
 				7FE1632B2415F9E400D1323A /* AppDelegate.swift */,
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
 				7FE1632F2415F9E400D1323A /* ViewController.swift */,
+				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
+				7FCEFE19241DAECA00011F37 /* NewViewController.swift */,
 				7FE163342415F9E500D1323A /* Assets.xcassets */,
 				7FE163392415F9E500D1323A /* Info.plist */,
 			);
 			path = Beacon;
+			sourceTree = "<group>";
+		};
+		CC20C80AC4E4523DC31ED90C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99C0D60A49B69D76A584853F /* Pods-Beacon.debug.xcconfig */,
+				4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FE1633C2415F9E500D1323A /* Build configuration list for PBXNativeTarget "Beacon" */;
 			buildPhases = (
+				6A6EC7B802C5D54E3E1A0C85 /* [CP] Check Pods Manifest.lock */,
 				7FE163242415F9E400D1323A /* Sources */,
 				7FE163252415F9E400D1323A /* Frameworks */,
 				7FE163262415F9E400D1323A /* Resources */,
+				99F16702A326EF34B9FB36F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +177,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A6EC7B802C5D54E3E1A0C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beacon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F16702A326EF34B9FB36F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beacon/Pods-Beacon-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beacon/Pods-Beacon-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beacon/Pods-Beacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FE163242415F9E400D1323A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,7 +226,9 @@
 			files = (
 				7FE163302415F9E400D1323A /* ViewController.swift in Sources */,
 				7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */,
+				7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */,
 				7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */,
+				7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +370,7 @@
 		};
 		7FE1633D2415F9E500D1323A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C0D60A49B69D76A584853F /* Pods-Beacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +389,7 @@
 		};
 		7FE1633E2415F9E500D1323A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
