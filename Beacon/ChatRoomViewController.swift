@@ -13,18 +13,14 @@ import UIKit
 
 struct Message: MessageType {
     var sender: SenderType
-    
     var messageId: String
-    
     var sentDate: Date
-    
     var kind: MessageKind
     
 }
 
 struct Sender: SenderType {
     var senderId: String
-    
     var displayName: String
 }
 
@@ -47,10 +43,8 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
         
-        messageInputBar.delegate = self
-        messageInputBar.inputTextView.textColor = .black
- 
-        
+        setupMessageInputBar()
+
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showMenu))
         
         session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
@@ -59,7 +53,6 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
     }
     
     func sendMessage() {
-        print("entered sendMessage function")
         guard let session = session else { return }
 
         if let messageData = textToSend?.data(using: .utf8) {
@@ -67,9 +60,7 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
                 try session.send(messageData, toPeers: session.connectedPeers, with: .reliable)
                 
                 let user = Sender(senderId: String(describing: self.peerID), displayName: self.peerID.displayName)
-                
                 let message = Message(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(textToSend!))
-                
                 insertMessage(message)
             } catch {
                 let ac = UIAlertController(title: "Send error", message: error.localizedDescription, preferredStyle: .alert)
@@ -194,16 +185,52 @@ extension ChatRoomViewController: MessagesDataSource, MessagesLayoutDelegate, Me
     
     //MARK: - Text Messages
     
-    func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
-        
-        return isFromCurrentSender(message: message) ? .white : UIColor(red: 102, green: 195, blue: 177, alpha: 1.0)
+    func isPreviousMessageSameSender(at indexPath: IndexPath) -> Bool {
+        guard indexPath.section - 1 >= 0 else { return false }
+        return messages[indexPath.section].sender.senderId == messages[indexPath.section - 1].sender.senderId
     }
+    
+    func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
+        return isFromCurrentSender(message: message) ? .white : .black
+    }
+    
+    func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
+        return isFromCurrentSender(message: message) ? UIColor(red:0.40, green:0.76, blue:0.69, alpha:1.00) : UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.00)
+    }
+    
+    func messageTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        if !isPreviousMessageSameSender(at: indexPath) {
+            let name = message.sender.displayName
+            return NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .caption1)])
+        } else {
+            return nil
+        }
+    }
+    
+    func messageTopLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
+        if isFromCurrentSender(message: message) {
+            return isPreviousMessageSameSender(at: indexPath) ? 0 : 20
+        } else {
+            return isPreviousMessageSameSender(at: indexPath) ? 0 : 20
+        }
+    }
+    
+//    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+//      avatarView.isHidden = true
+//    }
 }
 
 extension ChatRoomViewController: MessageInputBarDelegate {
+    func setupMessageInputBar() {
+        messageInputBar.delegate = self
+        messageInputBar.inputTextView.textColor = .black
+        messageInputBar.sendButton.setTitleColor(UIColor(red:0.40, green:0.76, blue:0.69, alpha:1.00), for: .normal)
+        messageInputBar.sendButton.setTitleColor(UIColor(red:0.40, green:0.76, blue:0.69, alpha:0.3), for: .highlighted)
+    }
+    
     func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
-        print("inhere")
         self.textToSend = text
         sendMessage()
+        messageInputBar.inputTextView.text = String()
     }
 }
