@@ -31,10 +31,10 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
     var advertiser: MCNearbyServiceAdvertiser!
     private let appServiceType = "beacon-app"
     var textToSend: String?
+    var status: String!
     
     var messages: [MessageType] = []
     let refreshControl = UIRefreshControl()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,12 +44,22 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
         messagesCollectionView.messagesDisplayDelegate = self
         
         setupMessageInputBar()
+        removeAvatar()
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showMenu))
         
         session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         session?.delegate = self
         title = "Chatroom"
+    }
+    
+    func removeAvatar() {
+        if let layout = messagesCollectionView.collectionViewLayout as? MessagesCollectionViewFlowLayout {
+          layout.setMessageIncomingAvatarSize(.zero)
+          layout.setMessageOutgoingAvatarSize(.zero)
+          layout.setMessageIncomingMessageTopLabelAlignment(LabelAlignment(textAlignment: .left, textInsets: UIEdgeInsets(top: 0, left: 18, bottom: 0, right: 0)))
+          layout.setMessageOutgoingMessageTopLabelAlignment(LabelAlignment(textAlignment: .right, textInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 18)))
+        }
     }
     
     func sendMessage() {
@@ -63,9 +73,18 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
                 let message = Message(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(textToSend!))
                 insertMessage(message)
             } catch {
-                let ac = UIAlertController(title: "Send error", message: error.localizedDescription, preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "OK", style: .default))
-                present(ac, animated: true)
+                let errorDomain = (error as NSError).domain
+                let errorCode = (error as NSError).code
+                
+                if errorDomain == "MCSession" && errorCode == 2 {
+                    let ac = UIAlertController(title: "Error sending message", message: "There are currently no peers in the chatroom. Please host or join a chat to proceed", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    present(ac, animated: true)
+                } else {
+                    let ac = UIAlertController(title: "Error sending message", message: error.localizedDescription, preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    present(ac, animated: true)
+                }
             }
         }
     }
@@ -215,9 +234,9 @@ extension ChatRoomViewController: MessagesDataSource, MessagesLayoutDelegate, Me
         }
     }
     
-//    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
-//      avatarView.isHidden = true
-//    }
+    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+      avatarView.isHidden = true
+    }
 }
 
 extension ChatRoomViewController: MessageInputBarDelegate {

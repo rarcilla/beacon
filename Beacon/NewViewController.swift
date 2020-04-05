@@ -9,7 +9,7 @@
 import MultipeerConnectivity
 import UIKit
 
-class NewViewController: UIViewController {
+class PreChatViewController: UIViewController {
     @IBOutlet weak var displayNameTextField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
     var displayName = ""

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
 		7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */; };
-		7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE19241DAECA00011F37 /* NewViewController.swift */; };
+		7FCEFE1A241DAECA00011F37 /* PreChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */; };
 		7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632B2415F9E400D1323A /* AppDelegate.swift */; };
 		7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632D2415F9E400D1323A /* SceneDelegate.swift */; };
 		7FE163302415F9E400D1323A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1632F2415F9E400D1323A /* ViewController.swift */; };
@@ -23,7 +23,7 @@
 		4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.release.xcconfig"; path = "Target Support Files/Pods-Beacon/Pods-Beacon.release.xcconfig"; sourceTree = "<group>"; };
 		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
-		7FCEFE19241DAECA00011F37 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreChatViewController.swift; sourceTree = "<group>"; };
 		7FE163282415F9E400D1323A /* Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE1632B2415F9E400D1323A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE1632D2415F9E400D1323A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
 				7FE1632F2415F9E400D1323A /* ViewController.swift */,
 				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
-				7FCEFE19241DAECA00011F37 /* NewViewController.swift */,
+				7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */,
 				7FE163342415F9E500D1323A /* Assets.xcassets */,
 				7FE163392415F9E500D1323A /* Info.plist */,
 			);
@@ -226,7 +226,7 @@
 			files = (
 				7FE163302415F9E400D1323A /* ViewController.swift in Sources */,
 				7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */,
-				7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */,
+				7FCEFE1A241DAECA00011F37 /* PreChatViewController.swift in Sources */,
 				7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */,
 				7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */,
 			);
