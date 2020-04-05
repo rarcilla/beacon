@@ -22,7 +22,7 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var statusControl: UISegmentedControl!
     
     var displayName = ""
-    var status = ""
+    var status = "Safe"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
         
         sendButton.isEnabled = false
         sendButton.alpha = 0.5
-        
+                
         setupBackground()
         setupLayout()
     }
@@ -95,9 +95,11 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func statusControlOnValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            status = "safe"
+            self.status = "Safe"
+            statusControl.backgroundColor = UIColor(red:0.92, green:0.91, blue:0.75, alpha:1.00)
         } else {
-            status = "help"
+            self.status = "Help"
+            statusControl.backgroundColor = UIColor(red:0.89, green:0.17, blue:0.17, alpha:1.00)
         }
     }
     

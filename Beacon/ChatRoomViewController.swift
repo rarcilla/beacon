@@ -31,7 +31,7 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
     var advertiser: MCNearbyServiceAdvertiser!
     private let appServiceType = "beacon-app"
     var textToSend: String?
-    var status: String!
+    var status: String?
     
     var messages: [MessageType] = []
     let refreshControl = UIRefreshControl()
@@ -46,6 +46,7 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
         setupMessageInputBar()
         removeAvatar()
 
+        self.navigationItem.title = "Chatroom (0 peers)"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showMenu))
         
         session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
@@ -72,23 +73,30 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
                 let user = Sender(senderId: String(describing: self.peerID), displayName: self.peerID.displayName)
                 let message = Message(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(textToSend!))
                 insertMessage(message)
+            } catch MCError.invalidParameter {
+                let ac = UIAlertController(title: "Error: your message was not sent.", message: "There are currently no peers in the chatroom to send message to.", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
             } catch {
-                let errorDomain = (error as NSError).domain
-                let errorCode = (error as NSError).code
-                
-                if errorDomain == "MCSession" && errorCode == 2 {
-                    let ac = UIAlertController(title: "Error sending message", message: "There are currently no peers in the chatroom. Please host or join a chat to proceed", preferredStyle: .alert)
-                    ac.addAction(UIAlertAction(title: "OK", style: .default))
-                    present(ac, animated: true)
-                } else {
-                    let ac = UIAlertController(title: "Error sending message", message: error.localizedDescription, preferredStyle: .alert)
-                    ac.addAction(UIAlertAction(title: "OK", style: .default))
-                    present(ac, animated: true)
-                }
+                let ac = UIAlertController(title: "Error sending message.", message: error.localizedDescription, preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
             }
         }
     }
-    
+        
+    func updateTitle(){
+        guard let session = session else { return }
+        let numberOfPeers = session.connectedPeers.count
+        
+        DispatchQueue.main.async {
+            if numberOfPeers == 1 {
+                self.title = "Chatroom (\(numberOfPeers) peer)"
+            } else {
+                self.title = "Chatroom (\(numberOfPeers) peers)"
+            }
+        }
+    }
 }
 
 //extension for MPC
@@ -98,15 +106,17 @@ extension ChatRoomViewController {
             switch state {
             case .connected:
                 print("\(peerID) has connected.")
+                updateTitle()
             case .connecting:
                 print("\(peerID) is connecting.")
             case .notConnected:
                 print("\(peerID) is not connected.")
+                updateTitle()
             @unknown default:
                 print("state of \(peerID) is unknown.")
             }
         }
-        
+    
         func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
             print("entered session didRecieve method")
             DispatchQueue.main.async { [weak self] in
