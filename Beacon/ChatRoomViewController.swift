@@ -118,7 +118,6 @@ extension ChatRoomViewController {
         }
     
         func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-            print("entered session didRecieve method")
             DispatchQueue.main.async { [weak self] in
                 if let messageString = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
                     
@@ -131,16 +130,31 @@ extension ChatRoomViewController {
             }
         }
 
-    func insertMessage(_ message: Message) {
-        messages.append(message)
-        // Reload last section to update header/footer labels and insert a new one
-        messagesCollectionView.performBatchUpdates({
-            messagesCollectionView.insertSections([messages.count - 1])
-            if messages.count >= 2 {
-                messagesCollectionView.reloadSections([messages.count - 2])
-            }
-        })
-    }
+        func insertMessage(_ message: Message) {
+            messages.append(message)
+
+            messagesCollectionView.performBatchUpdates({
+                messagesCollectionView.insertSections([messages.count - 1])
+                if messages.count >= 2 {
+                    messagesCollectionView.reloadSections([messages.count - 2])
+                }
+            }, completion: { [weak self] _ in
+                if self?.isLastSectionVisible() == true {
+                    self?.messagesCollectionView.scrollToBottom(animated: true)
+                }
+            })
+        }
+    
+        
+        func isLastSectionVisible() -> Bool {
+            
+            guard !messages.isEmpty else { return false }
+            
+            let lastIndexPath = IndexPath(item: 0, section: messages.count - 1)
+            
+            return messagesCollectionView.indexPathsForVisibleItems.contains(lastIndexPath)
+        }
+        
 
         func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
         }
