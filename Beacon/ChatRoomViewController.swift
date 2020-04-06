@@ -51,7 +51,6 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
         
         session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         session?.delegate = self
-        title = "Chatroom"
     }
     
     func removeAvatar() {

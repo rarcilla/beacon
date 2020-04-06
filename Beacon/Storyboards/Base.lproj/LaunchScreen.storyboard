@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="blacklighthouse" translatesAutoresizingMaskIntoConstraints="NO" id="Ckd-ws-5eF">
-                                <rect key="frame" x="75" y="316" width="264" height="264"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="lighthouse" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-kC-WOf">
+                                <rect key="frame" x="56" y="297" width="302" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -30,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blacklighthouse" width="512" height="512"/>
+        <image name="lighthouse" width="512" height="512"/>
     </resources>
 </document>
