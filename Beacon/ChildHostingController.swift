@@ -1,5 +1,5 @@
 //
-//  ChildHostingControllerViewController.swift
+//  ChildHostingController.swift
 //  Beacon
 //
 //  Created by Regina Arcilla on 2020-04-05.
@@ -9,7 +9,7 @@
 import UIKit
 import SwiftUI
 
-class ChildHostingControllerViewController: UIHostingController<EmergencyList> {
+class ChildHostingController: UIHostingController<EmergencyList> {
 
         required init?(coder: NSCoder) {
             super.init(coder: coder,rootView: EmergencyList());

@@ -6,43 +6,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test Tab Bar Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="4sR-rM-Nz6">
             <objects>
-                <tabBarController id="n8b-L3-ONu" customClass="TestTabBarController" customModule="Beacon" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="n8b-L3-ONu" customClass="TabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RhB-K3-GT9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.2361358106" green="0.25722825529999999" blue="0.32942086459999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="b68-ss-lUW" kind="relationship" relationship="viewControllers" id="1cO-Pv-mVR"/>
                         <segue destination="ggp-kN-R4O" kind="relationship" relationship="viewControllers" id="0ce-jt-t6X"/>
+                        <segue destination="b68-ss-lUW" kind="relationship" relationship="viewControllers" id="1cO-Pv-mVR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9G-Du-0jZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="106" y="146"/>
         </scene>
-        <!--NewViewController-->
+        <!--PreChatNavigationController-->
         <scene sceneID="8kD-1D-js9">
             <objects>
-                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="NewViewController" id="b68-ss-lUW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="UWH-uN-vWt"/>
+                <viewControllerPlaceholder storyboardIdentifier="PreChatNavigationController" storyboardName="Chat" referencedIdentifier="PreChatNavigationController" id="b68-ss-lUW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" id="UWH-uN-vWt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSZ-2g-R2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1207" y="429"/>
         </scene>
-        <!--Item-->
+        <!--ChildHostingController-->
         <scene sceneID="Zve-le-xyb">
             <objects>
-                <hostingController id="ggp-kN-R4O" customClass="ChildHostingControllerViewController" customModule="Beacon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Jgm-bs-Y5t"/>
+                <hostingController title="ChildHostingController" id="ggp-kN-R4O" customClass="ChildHostingController" customModule="Beacon" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Emergency Information" image="info_icon" id="Jgm-bs-Y5t"/>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNh-vt-jd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="-174"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info_icon" width="18" height="18"/>
+    </resources>
 </document>

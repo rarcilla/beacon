@@ -30,8 +30,8 @@
 		5FC754B9243A734500647C31 /* Emergency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754B7243A734500647C31 /* Emergency.swift */; };
 		5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754BA243A7BE000647C31 /* EmergencyList.swift */; };
 		5FC754BD243A811F00647C31 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754BC243A811F00647C31 /* CircleImage.swift */; };
-		7F4D2C7F243AD63A00F05CBF /* TestTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D2C7E243AD63A00F05CBF /* TestTabBarController.swift */; };
-		7F4D2C81243ADB5600F05CBF /* ChildHostingControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D2C80243ADB5600F05CBF /* ChildHostingControllerViewController.swift */; };
+		7F4D2C7F243AD63A00F05CBF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */; };
+		7F4D2C81243ADB5600F05CBF /* ChildHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */; };
 		7F4D2C83243AE29C00F05CBF /* baseline_chat_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D2C82243AE29C00F05CBF /* baseline_chat_black_18dp.png */; };
 		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
 		7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */; };
@@ -70,8 +70,8 @@
 		5FC754B7243A734500647C31 /* Emergency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emergency.swift; sourceTree = "<group>"; };
 		5FC754BA243A7BE000647C31 /* EmergencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyList.swift; sourceTree = "<group>"; };
 		5FC754BC243A811F00647C31 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		7F4D2C7E243AD63A00F05CBF /* TestTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabBarController.swift; sourceTree = "<group>"; };
-		7F4D2C80243ADB5600F05CBF /* ChildHostingControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildHostingControllerViewController.swift; sourceTree = "<group>"; };
+		7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildHostingController.swift; sourceTree = "<group>"; };
 		7F4D2C82243AE29C00F05CBF /* baseline_chat_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baseline_chat_black_18dp.png; path = "../../../../../../../Downloads/chat-black-18dp/2x/baseline_chat_black_18dp.png"; sourceTree = "<group>"; };
 		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
@@ -192,15 +192,15 @@
 				7F5794B4241CD0AF00BCD5CE /* Storyboards */,
 				5FC754B5243A734500647C31 /* Models */,
 				7FE1632B2415F9E400D1323A /* AppDelegate.swift */,
+				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
 				5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */,
-				7F4D2C7E243AD63A00F05CBF /* TestTabBarController.swift */,
-				7F4D2C80243ADB5600F05CBF /* ChildHostingControllerViewController.swift */,
 				5FC75496243A716400647C31 /* EmergencyRow.swift */,
 				5FC754BA243A7BE000647C31 /* EmergencyList.swift */,
-				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
-				7FE1632F2415F9E400D1323A /* ViewController.swift */,
-				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
+				7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */,
+				7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */,
 				7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */,
+				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
+				7FE1632F2415F9E400D1323A /* ViewController.swift */,
 				5FC75491243A70B400647C31 /* Supporting Views */,
 				5FC75498243A723F00647C31 /* Resources */,
 				7FE163342415F9E500D1323A /* Assets.xcassets */,
@@ -350,23 +350,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F4D2C81243ADB5600F05CBF /* ChildHostingControllerViewController.swift in Sources */,
+				7F4D2C81243ADB5600F05CBF /* ChildHostingController.swift in Sources */,
 				7FE163302415F9E400D1323A /* ViewController.swift in Sources */,
 				5FC754B8243A734500647C31 /* Data.swift in Sources */,
 				7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
 				7FCEFE1A241DAECA00011F37 /* PreChatViewController.swift in Sources */,
-=======
 				5FC754BD243A811F00647C31 /* CircleImage.swift in Sources */,
-				7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */,
 				5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */,
 				5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */,
 				5FC754B9243A734500647C31 /* Emergency.swift in Sources */,
 				5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */,
->>>>>>> merging_features
 				7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */,
 				5FC75495243A70B400647C31 /* MapView.swift in Sources */,
-				7F4D2C7F243AD63A00F05CBF /* TestTabBarController.swift in Sources */,
+				7F4D2C7F243AD63A00F05CBF /* TabBarController.swift in Sources */,
 				7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */,
 				5FC75497243A716400647C31 /* EmergencyRow.swift in Sources */,
 			);

@@ -9,31 +9,12 @@
 import UIKit
 import SwiftUI
 
-class TestTabBarController: UITabBarController {
+class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.selectedIndex = 1
-        
-        
-        let item = UITabBarItem()
-        item.title = "Chat"
-        item.image = UIImage(named: "chat_icon")
-        
-        var chatController = self.viewControllers![0] as! UIViewController
-
-        chatController.tabBarItem = item
-        
-        let item2 = UITabBarItem()
-        item2.title = "Emergency Info"
-        item2.image = UIImage(named: "info_icon")
-        
-        var infoController = self.viewControllers![1] as! UIViewController
-
-        infoController.tabBarItem = item2
-        
-        
+        self.selectedIndex = 0
     }
     
 
