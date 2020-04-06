@@ -227,6 +227,13 @@ extension ChatRoomViewController: MessagesDataSource, MessagesLayoutDelegate, Me
         return isFromCurrentSender(message: message) ? UIColor(red:0.40, green:0.76, blue:0.69, alpha:1.00) : UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.00)
     }
     
+    func cellTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        if indexPath.section % 5 == 0 {
+            return NSAttributedString(string: MessageKitDateFormatter.shared.string(from: message.sentDate), attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+        }
+        return nil
+    }
+    
     func messageTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
         if !isPreviousMessageSameSender(at: indexPath) {
             let name = message.sender.displayName
@@ -241,6 +248,16 @@ extension ChatRoomViewController: MessagesDataSource, MessagesLayoutDelegate, Me
             return isPreviousMessageSameSender(at: indexPath) ? 0 : 20
         } else {
             return isPreviousMessageSameSender(at: indexPath) ? 0 : 20
+        }
+    }
+    
+    func cellTopLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
+        if indexPath.section % 5 == 0 && !isPreviousMessageSameSender(at: indexPath) {
+            // not the same sender - cellTopLabel is showing
+            return 18
+        } else {
+            //same sender - hide cellTopLabel
+            return 0
         }
     }
     
