@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Earthquake",
+        "category": "Featured",
+        "city": "Vancouver",
+        "province": "British Columbia",
+        "id": 1001,
+        "safePlace": "Joshua Tree National Park",
+        "plan": "Make an earthquake safety plan",
+        "prepare": "How to prepare for an Earthquake",
+        "act": "Take action during an Earthquake",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "imageName": "earthquake"
+        },
+    {
+        "name": "Wildfire",
+        "category": "Natural",
+        "city": "Vancouver",
+        "province": "British Columbia",
+        "id": 1002,
+        "safePlace": "Lake Clark National Park and Preserve",
+        "plan": "Make an earthquake safety plan",
+        "prepare": "How to prepare for an Earthquake",
+        "act": "Take action during a wildfire",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "wildfire"
+    },
+    {
+        "name": "COVID-19",
+        "category": "Contagion",
+        "city": "Vancouver",
+        "province": "British Columbia",
+        "id": 1003,
+        "safePlace": "Lake Clark National Park and Preserve",
+        "plan": "Make an earthquake safety plan",
+        "prepare": "How to prepare for an Earthquake",
+        "act": "Take action during a wildfire",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "covid"
+    },
+    {
+        "name": "Flood",
+        "category": "Natural",
+        "city": "Vancouver",
+        "province": "British Columbia",
+        "id": 1004,
+        "safePlace": "Lake Clark National Park and Preserve",
+        "plan": "Make a flood safety plan",
+        "prepare": "How to prepare for a flood",
+        "act": "Take action during a flood",
+        "coordinates": {
+            "longitude": -113.536248,
+            "latitude": 48.69423
+        },
+        "imageName": "flood"
+    }
+]

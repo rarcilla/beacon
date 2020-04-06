@@ -1,7 +1,9 @@
 PODS:
-  - InputBarAccessoryView (4.2.2)
-  - MessageKit (3.0.0):
-    - InputBarAccessoryView (~> 4.2.2)
+  - InputBarAccessoryView (4.3.2):
+    - InputBarAccessoryView/Core (= 4.3.2)
+  - InputBarAccessoryView/Core (4.3.2)
+  - MessageKit (3.1.0):
+    - InputBarAccessoryView (~> 4.3.0)
 
 DEPENDENCIES:
   - MessageKit
@@ -12,8 +14,8 @@ SPEC REPOS:
     - MessageKit
 
 SPEC CHECKSUMS:
-  InputBarAccessoryView: 2b937602598e2fab3149f37f51dd7ad795653812
-  MessageKit: e892a9ca49ebe6d82684d3a93ad84021fa23e2c6
+  InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
+  MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
 
 PODFILE CHECKSUM: cb8a55b797e5116cd57f9e574fed074944d4ad76
 
