@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7548B243A6DE900647C31 /* LICENSE.txt */; };
+		5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */; };
+		5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75492243A70B400647C31 /* QuakeImage.swift */; };
+		5FC75495243A70B400647C31 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75493243A70B400647C31 /* MapView.swift */; };
+		5FC75497243A716400647C31 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75496243A716400647C31 /* EmergencyRow.swift */; };
+		5FC754A6243A723F00647C31 /* quakeBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC75499243A723F00647C31 /* quakeBanner.jpg */; };
+		5FC754A7243A723F00647C31 /* earthquakeGraphic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549A243A723F00647C31 /* earthquakeGraphic.jpg */; };
+		5FC754A8243A723F00647C31 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549B243A723F00647C31 /* download.jpg */; };
+		5FC754A9243A723F00647C31 /* mammamia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549C243A723F00647C31 /* mammamia.jpeg */; };
+		5FC754AA243A723F00647C31 /* EastVan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549D243A723F00647C31 /* EastVan.jpeg */; };
+		5FC754AB243A723F00647C31 /* earthquakeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549E243A723F00647C31 /* earthquakeIcon.png */; };
+		5FC754AC243A723F00647C31 /* wildfire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549F243A723F00647C31 /* wildfire.jpg */; };
+		5FC754AD243A723F00647C31 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A0243A723F00647C31 /* unnamed.png */; };
+		5FC754AE243A723F00647C31 /* covid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A1243A723F00647C31 /* covid.jpg */; };
+		5FC754AF243A723F00647C31 /* flood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A2243A723F00647C31 /* flood.jpg */; };
+		5FC754B0243A723F00647C31 /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A3243A723F00647C31 /* download-1.jpg */; };
+		5FC754B1243A723F00647C31 /* firstaidkit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A4243A723F00647C31 /* firstaidkit.jpg */; };
+		5FC754B2243A723F00647C31 /* earthquake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A5243A723F00647C31 /* earthquake.jpg */; };
+		5FC754B4243A72A600647C31 /* emergMenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754B3243A72A600647C31 /* emergMenuData.json */; };
+		5FC754B8243A734500647C31 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754B6243A734500647C31 /* Data.swift */; };
+		5FC754B9243A734500647C31 /* Emergency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754B7243A734500647C31 /* Emergency.swift */; };
+		5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754BA243A7BE000647C31 /* EmergencyList.swift */; };
+		5FC754BD243A811F00647C31 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754BC243A811F00647C31 /* CircleImage.swift */; };
 		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
 		7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */; };
 		7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE19241DAECA00011F37 /* NewViewController.swift */; };
@@ -21,6 +44,29 @@
 
 /* Begin PBXFileReference section */
 		4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.release.xcconfig"; path = "Target Support Files/Pods-Beacon/Pods-Beacon.release.xcconfig"; sourceTree = "<group>"; };
+		5FC7548B243A6DE900647C31 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergUIDetail.swift; sourceTree = "<group>"; };
+		5FC75492243A70B400647C31 /* QuakeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuakeImage.swift; sourceTree = "<group>"; };
+		5FC75493243A70B400647C31 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5FC75496243A716400647C31 /* EmergencyRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyRow.swift; path = "Supporting Views/EmergencyRow.swift"; sourceTree = "<group>"; };
+		5FC75499243A723F00647C31 /* quakeBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quakeBanner.jpg; sourceTree = "<group>"; };
+		5FC7549A243A723F00647C31 /* earthquakeGraphic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthquakeGraphic.jpg; sourceTree = "<group>"; };
+		5FC7549B243A723F00647C31 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		5FC7549C243A723F00647C31 /* mammamia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mammamia.jpeg; sourceTree = "<group>"; };
+		5FC7549D243A723F00647C31 /* EastVan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EastVan.jpeg; sourceTree = "<group>"; };
+		5FC7549E243A723F00647C31 /* earthquakeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earthquakeIcon.png; sourceTree = "<group>"; };
+		5FC7549F243A723F00647C31 /* wildfire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wildfire.jpg; sourceTree = "<group>"; };
+		5FC754A0243A723F00647C31 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
+		5FC754A1243A723F00647C31 /* covid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = covid.jpg; sourceTree = "<group>"; };
+		5FC754A2243A723F00647C31 /* flood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flood.jpg; sourceTree = "<group>"; };
+		5FC754A3243A723F00647C31 /* download-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download-1.jpg"; sourceTree = "<group>"; };
+		5FC754A4243A723F00647C31 /* firstaidkit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstaidkit.jpg; sourceTree = "<group>"; };
+		5FC754A5243A723F00647C31 /* earthquake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthquake.jpg; sourceTree = "<group>"; };
+		5FC754B3243A72A600647C31 /* emergMenuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emergMenuData.json; sourceTree = "<group>"; };
+		5FC754B6243A734500647C31 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5FC754B7243A734500647C31 /* Emergency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emergency.swift; sourceTree = "<group>"; };
+		5FC754BA243A7BE000647C31 /* EmergencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyList.swift; sourceTree = "<group>"; };
+		5FC754BC243A811F00647C31 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		7FCEFE19241DAECA00011F37 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +102,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5FC7548A243A6DE900647C31 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				5FC7548B243A6DE900647C31 /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		5FC75491243A70B400647C31 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FC75492243A70B400647C31 /* QuakeImage.swift */,
+				5FC75493243A70B400647C31 /* MapView.swift */,
+				5FC754BC243A811F00647C31 /* CircleImage.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		5FC75498243A723F00647C31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FC754B3243A72A600647C31 /* emergMenuData.json */,
+				5FC75499243A723F00647C31 /* quakeBanner.jpg */,
+				5FC7549A243A723F00647C31 /* earthquakeGraphic.jpg */,
+				5FC7549B243A723F00647C31 /* download.jpg */,
+				5FC7549C243A723F00647C31 /* mammamia.jpeg */,
+				5FC7549D243A723F00647C31 /* EastVan.jpeg */,
+				5FC7549E243A723F00647C31 /* earthquakeIcon.png */,
+				5FC7549F243A723F00647C31 /* wildfire.jpg */,
+				5FC754A0243A723F00647C31 /* unnamed.png */,
+				5FC754A1243A723F00647C31 /* covid.jpg */,
+				5FC754A2243A723F00647C31 /* flood.jpg */,
+				5FC754A3243A723F00647C31 /* download-1.jpg */,
+				5FC754A4243A723F00647C31 /* firstaidkit.jpg */,
+				5FC754A5243A723F00647C31 /* earthquake.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5FC754B5243A734500647C31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FC754B6243A734500647C31 /* Data.swift */,
+				5FC754B7243A734500647C31 /* Emergency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7F5794B4241CD0AF00BCD5CE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +167,7 @@
 				7FE163292415F9E400D1323A /* Products */,
 				CC20C80AC4E4523DC31ED90C /* Pods */,
 				1EA0C2B36CBA4E40DC1BBAB8 /* Frameworks */,
+				5FC7548A243A6DE900647C31 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,11 +183,17 @@
 			isa = PBXGroup;
 			children = (
 				7F5794B4241CD0AF00BCD5CE /* Storyboards */,
+				5FC754B5243A734500647C31 /* Models */,
 				7FE1632B2415F9E400D1323A /* AppDelegate.swift */,
+				5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */,
+				5FC75496243A716400647C31 /* EmergencyRow.swift */,
+				5FC754BA243A7BE000647C31 /* EmergencyList.swift */,
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
 				7FE1632F2415F9E400D1323A /* ViewController.swift */,
 				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
 				7FCEFE19241DAECA00011F37 /* NewViewController.swift */,
+				5FC75491243A70B400647C31 /* Supporting Views */,
+				5FC75498243A723F00647C31 /* Resources */,
 				7FE163342415F9E500D1323A /* Assets.xcassets */,
 				7FE163392415F9E500D1323A /* Info.plist */,
 			);
@@ -168,10 +269,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC754B2243A723F00647C31 /* earthquake.jpg in Resources */,
 				7FE163382415F9E500D1323A /* LaunchScreen.storyboard in Resources */,
+				5FC754B1243A723F00647C31 /* firstaidkit.jpg in Resources */,
+				5FC754AC243A723F00647C31 /* wildfire.jpg in Resources */,
+				5FC754AD243A723F00647C31 /* unnamed.png in Resources */,
+				5FC754B0243A723F00647C31 /* download-1.jpg in Resources */,
 				7FE163352415F9E500D1323A /* Assets.xcassets in Resources */,
 				7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */,
+				5FC754A8243A723F00647C31 /* download.jpg in Resources */,
+				5FC754AF243A723F00647C31 /* flood.jpg in Resources */,
+				5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */,
+				5FC754A9243A723F00647C31 /* mammamia.jpeg in Resources */,
+				5FC754A7243A723F00647C31 /* earthquakeGraphic.jpg in Resources */,
+				5FC754B4243A72A600647C31 /* emergMenuData.json in Resources */,
+				5FC754AE243A723F00647C31 /* covid.jpg in Resources */,
 				7FE163332415F9E400D1323A /* Main.storyboard in Resources */,
+				5FC754AA243A723F00647C31 /* EastVan.jpeg in Resources */,
+				5FC754AB243A723F00647C31 /* earthquakeIcon.png in Resources */,
+				5FC754A6243A723F00647C31 /* quakeBanner.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +341,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FE163302415F9E400D1323A /* ViewController.swift in Sources */,
+				5FC754B8243A734500647C31 /* Data.swift in Sources */,
 				7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */,
+				5FC754BD243A811F00647C31 /* CircleImage.swift in Sources */,
 				7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */,
+				5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */,
+				5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */,
+				5FC754B9243A734500647C31 /* Emergency.swift in Sources */,
+				5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */,
 				7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */,
+				5FC75495243A70B400647C31 /* MapView.swift in Sources */,
 				7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */,
+				5FC75497243A716400647C31 /* EmergencyRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

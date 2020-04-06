@@ -220,7 +220,7 @@ extension ChatRoomViewController: MessagesDataSource, MessagesLayoutDelegate, Me
 //    }
 }
 
-extension ChatRoomViewController: MessageInputBarDelegate {
+extension ChatRoomViewController: InputBarAccessoryViewDelegate {
     func setupMessageInputBar() {
         messageInputBar.delegate = self
         messageInputBar.inputTextView.textColor = .black
