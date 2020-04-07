@@ -9,17 +9,31 @@
 import SwiftUI
 import CoreLocation
 
-struct Emergency: Hashable, Codable, Identifiable {
+struct Emergency:  Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var subtitle: String
     fileprivate var imageName: String
     fileprivate var coordinates: Coordinates
     var province: String
+    var city: String
     var safePlace: String
     var category: Category
-    var plan: String
-    var prepare: String
-    var act: String
+    var isFavorite: Bool
+    var isFeatured: Bool
+    var generalInfo: String
+    var regionalInfo: String
+    var before: String
+    var during: String
+    var after: String
+    
+    var beforeSteps: Steps
+    var duringSteps: Steps
+    var afterSteps: Steps
+    
+    var beforeActions: [Action]
+    var duringActions: [Action]
+    var afterActions: [Action]
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -40,12 +54,26 @@ extension Emergency {
     }
 }
 
+struct Action: Hashable, Codable {
+    var step: String
+}
+
+//struct ActionSet: Hashable, Codable {
+//    struct ActionStep: Hashable, Codable {
+//        var step: String
+//    }
+//
+//    var actionSet: [ActionStep]
+//}
+
 struct Coordinates: Hashable, Codable {
     var latitude: Double
     var longitude: Double
 }
 
-
+struct Steps: Hashable, Codable {
+    var first, second, third: String
+}
 
 struct Emergency_Previews: PreviewProvider {
     static var previews: some View {

@@ -1,65 +1,278 @@
 [
     {
         "name": "Earthquake",
+        "subtitle": "subtitle",
         "category": "Featured",
         "city": "Vancouver",
         "province": "British Columbia",
         "id": 1001,
-        "safePlace": "Joshua Tree National Park",
-        "plan": "Make an earthquake safety plan",
-        "prepare": "How to prepare for an Earthquake",
-        "act": "Take action during an Earthquake",
+        "isFeatured": true,
+        "isFavorite": true,
+        "safePlace": "Set designated meeting areas for your household(s) and/or workplace(s)",
+        "generalInfo": "Earthquakes are common in B.C., with an average of 3,000 reported each year. Most are too small to be felt, but earthquakes strong enough to cause structural damage can occur once per decade. There is a good chance one of these could be the BIG ONE.",
+        "regionalInfo": "The most at-risk areas are along the west coast of the province, where the additional threat of a destructive tsunami is also very real. It’s important to take time to prepare and understand what to do before, during and after a major earthquake.",
+        "before": "Make an earthquake safety plan",
+        "beforeSteps": {
+            "first": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
+            "second": "Second",
+            "third": "Third"
+        },
+        "during": "How to prepare for an Earthquake",
+        "duringSteps": {
+            "first": "1. Drop to your hands and knees. If you’re inside, stay inside – don’t run outdoors or to other rooms.",
+            "second": "2. Cover your head and neck with your arm and take shelter under a sturdy piece of furniture. If there is no shelter nearby, crawl to the nearest interior corner or wall while continuing to protect your head and neck.",
+            "third": "3. Hold on to your shelter, covering your head and neck until the shaking stops."
+        },
+        "after": "Take action during an Earthquake",
+        "afterSteps": {
+            "first": "* When the earthquake is over and shaking has stopped, count to 60 before getting up.",
+            "second": "* Stay calm and move cautiously, checking for unstable objects and other hazards above and around you.",
+            "third": "* Be aware of the potential for aftershocks - and continue to drop, cover and hold on every time you feel one."
+        },
+        "beforeActions": [
+            {
+                "step": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours"
+            },
+            {
+                "step": "Second"
+            },
+            {
+                "step": "Third"
+            }
+        ],
+        "duringActions": [
+                {
+                    "step": "1. Drop to your hands and knees. If you’re inside, stay inside – don’t run outdoors or to other rooms."
+                },
+                {
+                    "step": "2. Cover your head and neck with your arm and take shelter under a sturdy piece of furniture. If there is no shelter nearby, crawl to the nearest interior corner or wall while continuing to protect your head and neck."
+                },
+                {
+                    "step": "3. Hold on to your shelter, covering your head and neck until the shaking stops."
+                }
+            ],
+            "afterActions": [
+                {
+                    "step": "* When the earthquake is over and shaking has stopped, count to 60 before getting up."
+                },
+                {
+                    "step": "* Stay calm and move cautiously, checking for unstable objects and other hazards above and around you."
+                },
+                {
+                    "step": "* Be aware of the potential for aftershocks - and continue to drop, cover and hold on every time you feel one."
+                }
+            ],
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": -123.116226,
+            "latitude": 49.246292
         },
         "imageName": "earthquake"
-        },
+    },
     {
         "name": "Wildfire",
+        "subtitle": "subtitle",
         "category": "Natural",
-        "city": "Vancouver",
+        "city": "Kelowna",
         "province": "British Columbia",
         "id": 1002,
-        "safePlace": "Lake Clark National Park and Preserve",
-        "plan": "Make an earthquake safety plan",
-        "prepare": "How to prepare for an Earthquake",
-        "act": "Take action during a wildfire",
+        "isFeatured": false,
+        "isFavorite": false,
+        "safePlace": "Set designated meeting areas for your household(s) and/or workplace(s)",
+        "generalInfo": "Many wildfires in B.C. occur far from cities and towns, but sometimes they threaten homes, businesses and vital infrastructure. Help keep your family safe by knowing what to do before, during and after a wildfire. You should also develop your emergency plan, put together your  grab-and go-bags and know the difference between an evacuation alert and order.",
+        "regionalInfo": "The most at-risk areas are in the Okanagan",
+        "before": "Make an wildfire safety plan",
+        "beforeSteps": {
+            "first": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
+            "second": "2. Nearly half of all wildfires in B.C. are caused by human carelessness. You can prevent them by following a few simple rules: Check for bans and restrictions, Camp responsibly, and never leave a campfire unattended.",
+            "third": "Call 1-800-663-5555 or *5555 on your cell if you spot smoke, flames or an unattended campfire"
+        },
+        "during": "Actions to take during a wildfire",
+        "duringSteps": {
+            "first": "EVACUATION ORDER: You are at risk. Leave the area immediately. You are encouraged to register all family members at the nearest reception centre so emergency responders know you are safe.",
+            "second": "EVACUATION ALERT: Be ready to leave on short notice. This is the time to gather your grab-and-go bags and ensure your vehicle has fuel. If you leave before or during this alert, it’s called a voluntary evacuation.",
+            "third": "EVACUATION RESCINDED: All is currently safe and you can return home. Stay tuned for other possible evacuation alerts or orders."
+        },
+        "after": "Steps to take after a wildfire",
+        "afterSteps": {
+           "first": "1. If you are evacuated, only return home when authorities say it's safe to do so. Stay out of damaged buildings as hazards may still exist",
+           "second": "2. If you’re evacuated from your primary residence due to a disaster, Emergency Support Services (ESS) may be made available for up to 72 hours or longer depending on your needs.",
+           "third": "3. Remember: Wildfire activity may increase the likelihood for natural landslides and flooding."
+        },
+        "beforeActions": [
+                {
+                    "step": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours"
+                },
+                {
+                    "step": "2. Nearly half of all wildfires in B.C. are caused by human carelessness. You can prevent them by following a few simple rules: Check for bans and restrictions, Camp responsibly, and never leave a campfire unattended."
+                },
+                {
+                    "step": "Call 1-800-663-5555 or *5555 on your cell if you spot smoke, flames or an unattended campfire"
+                }
+            ],
+        "duringActions": [
+            {
+                "step": "EVACUATION ORDER: You are at risk. Leave the area immediately. You are encouraged to register all family members at the nearest reception centre so emergency responders know you are safe."
+            },
+            {
+                "step": "EVACUATION ALERT: Be ready to leave on short notice. This is the time to gather your grab-and-go bags and ensure your vehicle has fuel. If you leave before or during this alert, it’s called a voluntary evacuation."
+            },
+            {
+                "step": "EVACUATION RESCINDED: All is currently safe and you can return home. Stay tuned for other possible evacuation alerts or orders."
+            }
+        ],
+        "afterActions": [
+                {
+                    "step": "1. If you are evacuated, only return home when authorities say it's safe to do so. Stay out of damaged buildings as hazards may still exist"
+                },
+                {
+                    "step": "2. If you’re evacuated from your primary residence due to a disaster, Emergency Support Services (ESS) may be made available for up to 72 hours or longer depending on your needs."
+                },
+                {
+                    "step": "3. Remember: Wildfire activity may increase the likelihood for natural landslides and flooding."
+                }
+        ],
         "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
+            "longitude": -119.477829,
+            "latitude": 49.882114
         },
         "imageName": "wildfire"
     },
     {
         "name": "COVID-19",
+        "subtitle": "subtitle",
         "category": "Contagion",
         "city": "Vancouver",
         "province": "British Columbia",
         "id": 1003,
-        "safePlace": "Lake Clark National Park and Preserve",
-        "plan": "Make an earthquake safety plan",
-        "prepare": "How to prepare for an Earthquake",
-        "act": "Take action during a wildfire",
+        "isFeatured": false,
+        "isFavorite": true,
+        "safePlace": "Set designated meeting areas for your household(s) and/or workplace(s)",
+        "generalInfo": "Everyone has a role to play in easing the spread of COVID-19 and lessening its impact on vulnerable populations. You can do your part by ensuring you’re prepared to stay home if you’re asked to or if you get sick.",
+        "regionalInfo": "The most at-risk areas are in the Okanagan",
+        "before": "Make an earthquake safety plan",
+        "beforeSteps": {
+            "first": "1. Get Educated: A big part of being prepared is knowing the signs and symptoms of COVID-19. Symptoms include fever, coughing and difficulty breathing. Use the COVID-19 symptom self-assessment tool to determine if you need further assessment or testing.",
+            "second": "2. Purchase Extra Essentials, But Don't Panic Buy: Now is a good time to pick-up extra non-perishable food items. Don’t stockpile, just add a few additional things to your cart each time you shop",
+            "third": "3. Connect with those around you and agree to help if someone needs support. This means checking in on each other and running errands for essential items. If you end up helping someone, take the following steps to stay healthy and avoid spreading the virus: Phone ahead and leave requested items at the door, Check in by phone versus visiting in person, and if you need to chat face-to-face, don’t touch door handles and keep a distance at the door of at least two metres (six feet)."
+        },
+        "during": "What to do during COVID-19 pandemic",
+        "duringSteps": {
+            "first": "1. Remember: Most people do not need to be tested for COVID-19 because it will not change your care. People who do not need to be tested for COVID-19 include: People without symptoms, People who have mild respiratory symptoms that can be managed at home, and Returning travellers.",
+            "second": "2. Anyone who has symptoms - including a fever, cough, sneezing, or sore throat - should self-isolate for 10 days. Continue to complete this assessment to determine if you may need care.",
+            "third": "3. The province has created a phone service to provide non-medical information about COVID-19, including the latest information on travel restrictions. Information is available in more than 110 languages, 7:30 a.m. - 8 p.m. Pacific Standard Time at 1-888-COVID19 (1-888-268-4319) or via text message at 604-630-0300."
+        },
+        "after":"Take action after COVID-19 self-isolation",
+        "afterSteps": {
+            "first": "1. You must stay home and isolate yourself for at least 10 days from the start of any symptoms. You may return to your regular activities:  after 10 days if you feel better, your symptoms have improved, AND you have had no fever for 72 hours (3 full days), whichever is later.",
+            "second": "2. Your cough may last for several weeks. If you only have a cough, you do not have to keep isolating after 10 days.",
+            "third": "3. If your illness gets worse, or you require medical care because you have a condition that puts you at greater risk for severe illness, your health care provider may tell you to continue to isolate until tests confirm you have recovered from the virus."
+        },
+        "beforeActions": [
+            {
+                "step": "1. Get Educated: A big part of being prepared is knowing the signs and symptoms of COVID-19. Symptoms include fever, coughing and difficulty breathing. Use the COVID-19 symptom self-assessment tool to determine if you need further assessment or testing."
+            },
+            {
+                "step": "2. Purchase Extra Essentials, But Don't Panic Buy: Now is a good time to pick-up extra non-perishable food items. Don’t stockpile, just add a few additional things to your cart each time you shop"
+            },
+            {
+                "step": "3. Connect with those around you and agree to help if someone needs support. This means checking in on each other and running errands for essential items. If you end up helping someone, take the following steps to stay healthy and avoid spreading the virus: Phone ahead and leave requested items at the door, Check in by phone versus visiting in person, and if you need to chat face-to-face, don’t touch door handles and keep a distance at the door of at least two metres (six feet)."
+            }
+        ],
+        "duringActions": [
+            {
+                "step": "1. Remember: Most people do not need to be tested for COVID-19 because it will not change your care. People who do not need to be tested for COVID-19 include: People without symptoms, People who have mild respiratory symptoms that can be managed at home, and Returning travellers."
+            },
+            {
+                "step": "2. Anyone who has symptoms - including a fever, cough, sneezing, or sore throat - should self-isolate for 10 days. Continue to complete this assessment to determine if you may need care."
+            },
+            {
+                "step": "3. The province has created a phone service to provide non-medical information about COVID-19, including the latest information on travel restrictions. Information is available in more than 110 languages, 7:30 a.m. - 8 p.m. Pacific Standard Time at 1-888-COVID19 (1-888-268-4319) or via text message at 604-630-0300."
+            }
+        ],
+        "afterActions": [
+            {
+                "step": "1. You must stay home and isolate yourself for at least 10 days from the start of any symptoms. You may return to your regular activities:  after 10 days if you feel better, your symptoms have improved, AND you have had no fever for 72 hours (3 full days), whichever is later."
+            },
+            {
+                "step": "2. Your cough may last for several weeks. If you only have a cough, you do not have to keep isolating after 10 days."
+            },
+            {
+                "step": "3. If your illness gets worse, or you require medical care because you have a condition that puts you at greater risk for severe illness, your health care provider may tell you to continue to isolate until tests confirm you have recovered from the virus."
+            }
+        ],
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
+            "longitude": -123.123911,
+            "latitude": 49.261798
         },
         "imageName": "covid"
     },
     {
         "name": "Flood",
+        "subtitle": "subtitle",
         "category": "Natural",
         "city": "Vancouver",
         "province": "British Columbia",
         "id": 1004,
-        "safePlace": "Lake Clark National Park and Preserve",
-        "plan": "Make a flood safety plan",
-        "prepare": "How to prepare for a flood",
-        "act": "Take action during a flood",
+        "isFeatured": true,
+        "isFavorite": true,
+        "safePlace": "Set designated meeting areas for your household(s) and/or workplace(s)",
+        "generalInfo": "Floods are common in B.C. and can happen at any time of year. The most severe floods usually occur in spring and early summer due to heavy rain and melting snow. This seasonal flooding is known as freshet. They can also be caused by storm surges, ice jams or damage to structures like dikes or dams.",
+        "regionalInfo": "In some areas of B.C., climate change and related extreme weather events have increased the flood risk. Rising temperatures, changing freeze-thaw cycles and rising sea levels can all contribute to flooding.",
+        "before": "Make a flood safety plan",
+        "beforeSteps": {
+            "first": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
+            "second": "2. If you're in an area that is prone to flooding, or you just want to be proactive, there are a number of activities you can complete to prepare for a flood.",
+            "third": "3. Store valuables and important items or documents in water-right containers or in higher places, like on a tall shelf or upper floor"
+        },
+        "during": "How to prepare for a flood",
+        "duringSteps": {
+            "first": "You can stay safe during a flood by understanding flood advisories and warnings, evacuation stages, and actions you can take to protect yourself.",
+            "second": "If flooding is imminent but you have not yet been instructed to evacuate: Monitor local radio stations, television news and social media for the latest information from your local authorities on sandbagging stations, possible evacuation procedures and routes.",
+            "third": "If a flood warning is in effect, shut off electricity to areas that are at risk of flooding and move small appliances, electronics and smaller furniture to upper floors or areas not likely to be affected"
+        },
+        "after": "After a flood & What to do when an Evacuation is rescinded",
+        "afterSteps": {
+            "first": "Once officials determine the situation is safe, the evacuation order will be rescinded and you can return home. Continue to stay tuned for other possible evacuation alerts or orders.",
+            "second": "Returning home after a flood can be overwhelming, but if you use caution and take things one step at a time, it is possible to recover and return your home to normal. Do not return home until authorities say it is safe to do so and they have cleared your home of any structural, electrical or other hazards",
+            "third": "Ensure your electricity has been turned off. Do NOT attempt to turn the power back on in your home until the wiring has been inspected by a professional"
+        },
+        "beforeActions": [
+            {
+                "step": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours"
+            },
+            {
+                "step": "2. If you're in an area that is prone to flooding, or you just want to be proactive, there are a number of activities you can complete to prepare for a flood."
+            },
+            {
+                "step": "3. Store valuables and important items or documents in water-right containers or in higher places, like on a tall shelf or upper floor"
+            }
+        ],
+        "duringActions": [
+            {
+                "step": "You can stay safe during a flood by understanding flood advisories and warnings, evacuation stages, and actions you can take to protect yourself."
+            },
+            {
+                "step": "If flooding is imminent but you have not yet been instructed to evacuate: Monitor local radio stations, television news and social media for the latest information from your local authorities on sandbagging stations, possible evacuation procedures and routes."
+            },
+            {
+                "step": "If a flood warning is in effect, shut off electricity to areas that are at risk of flooding and move small appliances, electronics and smaller furniture to upper floors or areas not likely to be affected"
+                
+            }
+        ],
+        "afterActions": [
+            {
+                "step": "Once officials determine the situation is safe, the evacuation order will be rescinded and you can return home. Continue to stay tuned for other possible evacuation alerts or orders."
+            },
+            {
+                "step": "Returning home after a flood can be overwhelming, but if you use caution and take things one step at a time, it is possible to recover and return your home to normal. Do not return home until authorities say it is safe to do so and they have cleared your home of any structural, electrical or other hazards"
+            },
+            {
+                "step": "Ensure your electricity has been turned off. Do NOT attempt to turn the power back on in your home until the wiring has been inspected by a professional"
+            }
+        ],
         "coordinates": {
-            "longitude": -113.536248,
-            "latitude": 48.69423
+            "longitude": -121.4600,
+            "latitude": 49.1400
         },
         "imageName": "flood"
     }
