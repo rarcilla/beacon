@@ -9,10 +9,10 @@
 import UIKit
 import SwiftUI
 
-class ChildHostingController: UIHostingController<EmergencyList> {
+class ChildHostingController: UIHostingController<CategoryHome> {
 
         required init?(coder: NSCoder) {
-            super.init(coder: coder,rootView: EmergencyList());
+            super.init(coder: coder,rootView: CategoryHome());
         }
 
         override func viewDidLoad() {
