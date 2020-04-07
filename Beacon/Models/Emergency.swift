@@ -71,6 +71,7 @@ struct Coordinates: Hashable, Codable {
     var longitude: Double
 }
 
+
 struct Steps: Hashable, Codable {
     var first, second, third: String
 }

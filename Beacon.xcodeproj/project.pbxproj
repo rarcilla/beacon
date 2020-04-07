@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F058F4E243C2847000CEA5B /* EarthquakeDuringActionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */; };
+		5F058F50243C3239000CEA5B /* EarthquakeAfterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */; };
+		5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */; };
+		5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */; };
 		5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7548B243A6DE900647C31 /* LICENSE.txt */; };
 		5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */; };
 		5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75492243A70B400647C31 /* QuakeImage.swift */; };
@@ -50,6 +54,10 @@
 
 /* Begin PBXFileReference section */
 		4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.release.xcconfig"; path = "Target Support Files/Pods-Beacon/Pods-Beacon.release.xcconfig"; sourceTree = "<group>"; };
+		5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDuringActionList.swift; sourceTree = "<group>"; };
+		5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAfterList.swift; sourceTree = "<group>"; };
+		5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeBeforeList.swift; sourceTree = "<group>"; };
+		5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeMain.swift; sourceTree = "<group>"; };
 		5FC7548B243A6DE900647C31 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergUIDetail.swift; sourceTree = "<group>"; };
 		5FC75492243A70B400647C31 /* QuakeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuakeImage.swift; sourceTree = "<group>"; };
@@ -206,6 +214,10 @@
 				5FC754C4243B926900647C31 /* ActionDetail.swift */,
 				5FC754C6243B927B00647C31 /* ActionRow.swift */,
 				5FC754C2243B915900647C31 /* ActionList.swift */,
+				5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */,
+				5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */,
+				5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */,
+				5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */,
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
 				7FE1632F2415F9E400D1323A /* ViewController.swift */,
 				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
@@ -367,15 +379,19 @@
 				5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */,
 				5FC754BF243ACA6300647C31 /* Home.swift in Sources */,
 				5FC754C1243AD8C700647C31 /* CategoryRow.swift in Sources */,
+				5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */,
+				5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */,
 				5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */,
 				5FC754C7243B927B00647C31 /* ActionRow.swift in Sources */,
 				5FC754B9243A734500647C31 /* Emergency.swift in Sources */,
 				5FC754C9243BB56300647C31 /* ActionHeaderImage.swift in Sources */,
 				5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */,
+				5F058F4E243C2847000CEA5B /* EarthquakeDuringActionList.swift in Sources */,
 				7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */,
 				5FC754C5243B926900647C31 /* ActionDetail.swift in Sources */,
 				5FC75495243A70B400647C31 /* MapView.swift in Sources */,
 				7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */,
+				5F058F50243C3239000CEA5B /* EarthquakeAfterList.swift in Sources */,
 				5FC75497243A716400647C31 /* EmergencyRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

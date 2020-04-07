@@ -17,13 +17,13 @@
             "second": "Second",
             "third": "Third"
         },
-        "during": "How to prepare for an Earthquake",
+        "during": "Actions: In the event of an Earthquake",
         "duringSteps": {
             "first": "1. Drop to your hands and knees. If you’re inside, stay inside – don’t run outdoors or to other rooms.",
             "second": "2. Cover your head and neck with your arm and take shelter under a sturdy piece of furniture. If there is no shelter nearby, crawl to the nearest interior corner or wall while continuing to protect your head and neck.",
             "third": "3. Hold on to your shelter, covering your head and neck until the shaking stops."
         },
-        "after": "Take action during an Earthquake",
+        "after": "What to do after an Earthquake",
         "afterSteps": {
             "first": "* When the earthquake is over and shaking has stopped, count to 60 before getting up.",
             "second": "* Stay calm and move cautiously, checking for unstable objects and other hazards above and around you.",
@@ -31,13 +31,13 @@
         },
         "beforeActions": [
             {
-                "step": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours"
+                "step": "Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours"
             },
             {
-                "step": "Second"
+                "step": "When disaster strikes, the most immediate help will come from those around you - your neighbours. Connecting and building relationships with them today will mean a better response and faster recovery."
             },
             {
-                "step": "Third"
+                "step": "Take part in the Great British Columbia ShakeOut earthquake drill every October and practice what to do when the ground starts shaking."
             }
         ],
         "duringActions": [

@@ -22,6 +22,8 @@ import SwiftUI
 struct ActionDetail: View {
     var emergency: Emergency
     
+    @State var isOpen: Bool = false
+    
     var body: some View {
         ScrollView {
            GeometryReader { geometry in
@@ -43,7 +45,7 @@ struct ActionDetail: View {
                    }
                }
            }
-           .frame(height: 350)
+           .frame(height: 200)
             VStack(alignment: .leading) {
                 Text(emergency.name)
                     .font(.custom("AvenirNext-Bold", size: 30))
@@ -61,12 +63,67 @@ struct ActionDetail: View {
                     .lineLimit(nil)
             }
             .frame(width: 350)
+            .contextMenu{
+                VStack {
+                    Button(action: {
+                        self.isOpen = true
+                    }, label: {
+                        HStack {
+                            Text("Prepare")
+                            Image(systemName: "star")
+                        }
+                    }).sheet(isPresented: $isOpen, content: {
+                        SecondView()
+                    })
+                    Button(action: {
+                        self.isOpen = true
+                    }, label: {
+                        HStack {
+                            Text("During")
+                            Image(systemName: "star")
+                        }
+                    }).sheet(isPresented: $isOpen, content: {
+                        ThirdView()
+                    })
+                    Button(action: {
+                        self.isOpen = true
+                    }, label: {
+                        HStack {
+                            Text("After")
+                            Image(systemName: "star")
+                        }
+                    }).sheet(isPresented: $isOpen, content: {
+                        FourthView()
+                    })
+                }
+            }
         }
+        
     }
 }
+
+
+struct SecondView: View {
+@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+var body: some View {
+    EarthquakeBeforeList(emergency: emergencyData[0])
+}}
+
+struct ThirdView: View {
+@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+var body: some View {
+    EarthquakeDuringActionList(emergency: emergencyData[0])
+}}
+
+struct FourthView: View {
+@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+var body: some View {
+    EarthquakeAfterList(emergency: emergencyData[0])
+}}
+
 struct ActionDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ActionDetail(emergency: emergencyData[1])
+        ActionDetail(emergency: emergencyData[0])
     }
 }
 

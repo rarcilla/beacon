@@ -24,9 +24,10 @@ struct CategoryRow: View {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.items) { emergency in
                         NavigationLink(
-                            destination: EmergUIDetail(
-                                emergency: emergency
-                            )
+//                            destination: EmergUIDetail(
+//                                emergency: emergency
+//                            )
+                            destination: ActionDetail(emergency: emergencyData[0])
                         ) {
                             CategoryItem(emergency: emergency)
                         }
