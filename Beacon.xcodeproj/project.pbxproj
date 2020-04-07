@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F058F4E243C2847000CEA5B /* EarthquakeDuringActionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */; };
+		5F058F50243C3239000CEA5B /* EarthquakeAfterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */; };
+		5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */; };
+		5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */; };
 		5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7548B243A6DE900647C31 /* LICENSE.txt */; };
 		5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */; };
 		5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75492243A70B400647C31 /* QuakeImage.swift */; };
@@ -33,6 +37,12 @@
 		7F4D2C7F243AD63A00F05CBF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */; };
 		7F4D2C81243ADB5600F05CBF /* ChildHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */; };
 		7F4D2C83243AE29C00F05CBF /* baseline_chat_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4D2C82243AE29C00F05CBF /* baseline_chat_black_18dp.png */; };
+		5FC754BF243ACA6300647C31 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754BE243ACA6300647C31 /* Home.swift */; };
+		5FC754C1243AD8C700647C31 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C0243AD8C700647C31 /* CategoryRow.swift */; };
+		5FC754C3243B915A00647C31 /* ActionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C2243B915900647C31 /* ActionList.swift */; };
+		5FC754C5243B926900647C31 /* ActionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C4243B926900647C31 /* ActionDetail.swift */; };
+		5FC754C7243B927B00647C31 /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C6243B927B00647C31 /* ActionRow.swift */; };
+		5FC754C9243BB56300647C31 /* ActionHeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C8243BB56300647C31 /* ActionHeaderImage.swift */; };
 		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
 		7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */; };
 		7FCEFE1A241DAECA00011F37 /* PreChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */; };
@@ -47,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		4B15D63152E6AD633BD2ABA2 /* Pods-Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beacon.release.xcconfig"; path = "Target Support Files/Pods-Beacon/Pods-Beacon.release.xcconfig"; sourceTree = "<group>"; };
+		5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDuringActionList.swift; sourceTree = "<group>"; };
+		5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAfterList.swift; sourceTree = "<group>"; };
+		5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeBeforeList.swift; sourceTree = "<group>"; };
+		5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeMain.swift; sourceTree = "<group>"; };
 		5FC7548B243A6DE900647C31 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergUIDetail.swift; sourceTree = "<group>"; };
 		5FC75492243A70B400647C31 /* QuakeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuakeImage.swift; sourceTree = "<group>"; };
@@ -73,6 +87,12 @@
 		7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildHostingController.swift; sourceTree = "<group>"; };
 		7F4D2C82243AE29C00F05CBF /* baseline_chat_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baseline_chat_black_18dp.png; path = "../../../../../../../Downloads/chat-black-18dp/2x/baseline_chat_black_18dp.png"; sourceTree = "<group>"; };
+		5FC754BE243ACA6300647C31 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5FC754C0243AD8C700647C31 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		5FC754C2243B915900647C31 /* ActionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionList.swift; sourceTree = "<group>"; };
+		5FC754C4243B926900647C31 /* ActionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDetail.swift; sourceTree = "<group>"; };
+		5FC754C6243B927B00647C31 /* ActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
+		5FC754C8243BB56300647C31 /* ActionHeaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHeaderImage.swift; sourceTree = "<group>"; };
 		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreChatViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +142,7 @@
 				5FC75492243A70B400647C31 /* QuakeImage.swift */,
 				5FC75493243A70B400647C31 /* MapView.swift */,
 				5FC754BC243A811F00647C31 /* CircleImage.swift */,
+				5FC754C8243BB56300647C31 /* ActionHeaderImage.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -193,12 +214,23 @@
 				5FC754B5243A734500647C31 /* Models */,
 				7FE1632B2415F9E400D1323A /* AppDelegate.swift */,
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
+				5FC754BE243ACA6300647C31 /* Home.swift */,
 				5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */,
 				5FC75496243A716400647C31 /* EmergencyRow.swift */,
+				5FC754C0243AD8C700647C31 /* CategoryRow.swift */,
 				5FC754BA243A7BE000647C31 /* EmergencyList.swift */,
 				7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */,
 				7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */,
 				7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */,
+				5FC754C4243B926900647C31 /* ActionDetail.swift */,
+				5FC754C6243B927B00647C31 /* ActionRow.swift */,
+				5FC754C2243B915900647C31 /* ActionList.swift */,
+				5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */,
+				5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */,
+				5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */,
+				5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */,
+				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
+				7FE1632F2415F9E400D1323A /* ViewController.swift */,
 				7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */,
 				7FE1632F2415F9E400D1323A /* ViewController.swift */,
 				5FC75491243A70B400647C31 /* Supporting Views */,
@@ -356,14 +388,24 @@
 				7FE1632C2415F9E400D1323A /* AppDelegate.swift in Sources */,
 				7FCEFE1A241DAECA00011F37 /* PreChatViewController.swift in Sources */,
 				5FC754BD243A811F00647C31 /* CircleImage.swift in Sources */,
+				5FC754C3243B915A00647C31 /* ActionList.swift in Sources */,
 				5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */,
+				5FC754BF243ACA6300647C31 /* Home.swift in Sources */,
+				5FC754C1243AD8C700647C31 /* CategoryRow.swift in Sources */,
+				5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */,
+				5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */,
 				5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */,
+				5FC754C7243B927B00647C31 /* ActionRow.swift in Sources */,
 				5FC754B9243A734500647C31 /* Emergency.swift in Sources */,
+				5FC754C9243BB56300647C31 /* ActionHeaderImage.swift in Sources */,
 				5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */,
+				5F058F4E243C2847000CEA5B /* EarthquakeDuringActionList.swift in Sources */,
 				7FE1632E2415F9E400D1323A /* SceneDelegate.swift in Sources */,
+				5FC754C5243B926900647C31 /* ActionDetail.swift in Sources */,
 				5FC75495243A70B400647C31 /* MapView.swift in Sources */,
 				7F4D2C7F243AD63A00F05CBF /* TabBarController.swift in Sources */,
 				7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */,
+				5F058F50243C3239000CEA5B /* EarthquakeAfterList.swift in Sources */,
 				5FC75497243A716400647C31 /* EmergencyRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
