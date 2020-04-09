@@ -15,14 +15,9 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var nameStackView: UIStackView!
-    @IBOutlet weak var statusStackView: UIStackView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
-    
-    @IBOutlet weak var statusControl: UISegmentedControl!
     
     var displayName = ""
-    var status = "Safe"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +67,6 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
         let margins = view.layoutMarginsGuide
         headerLabel.translatesAutoresizingMaskIntoConstraints = false
         nameStackView.translatesAutoresizingMaskIntoConstraints = false
-        statusStackView.translatesAutoresizingMaskIntoConstraints = false
         sendButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -81,26 +75,13 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
             nameStackView.centerXAnchor.constraint(equalTo: margins.centerXAnchor),
             nameStackView.topAnchor.constraint(equalTo: margins.centerYAnchor, constant: -85),
             nameStackView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            statusStackView.topAnchor.constraint(equalTo: nameStackView.bottomAnchor, constant: 20),
-            statusStackView.leadingAnchor.constraint(equalTo: nameStackView.leadingAnchor),
             displayNameTextField.widthAnchor.constraint(equalTo: nameStackView.widthAnchor, multiplier: 0.75),
             displayNameTextField.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor),
-            statusControl.leadingAnchor.constraint(equalTo: displayNameTextField.leadingAnchor),
             sendButton.centerXAnchor.constraint(equalTo: margins.centerXAnchor),
-            sendButton.topAnchor.constraint(equalTo: statusStackView.bottomAnchor, constant: 30)
+            sendButton.topAnchor.constraint(equalTo: nameStackView.bottomAnchor, constant: 30)
         ])
         
         sendButton.layer.cornerRadius = 4
-    }
-    
-    @IBAction func statusControlOnValueChanged(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            self.status = "Safe"
-            statusControl.backgroundColor = UIColor(red:0.92, green:0.91, blue:0.75, alpha:1.00)
-        } else {
-            self.status = "Help"
-            statusControl.backgroundColor = UIColor(red:0.89, green:0.17, blue:0.17, alpha:1.00)
-        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -114,7 +95,6 @@ class PreChatViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? ChatRoomViewController {
             dest.peerID = MCPeerID(displayName: self.displayName)
-            dest.status = self.status
         }
     }
 }

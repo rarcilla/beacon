@@ -57,28 +57,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-Oq-8yy" userLabel="Status Stack View">
-                                <rect key="frame" x="107" y="393" width="228.5" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efq-jX-m2A">
-                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c4w-uz-Xe8">
-                                        <rect key="frame" x="49.5" y="0.0" width="179" height="32"/>
-                                        <color key="backgroundColor" red="0.92056506869999999" green="0.91229254010000005" blue="0.76468342540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <segments>
-                                            <segment title="I am Safe"/>
-                                            <segment title="I need Help"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="statusControlOnValueChanged:" destination="Tcm-Sn-9qM" eventType="valueChanged" id="6lg-7r-GVH"/>
-                                        </connections>
-                                    </segmentedControl>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ju-np-Koc">
                                 <rect key="frame" x="186" y="517" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,9 +81,6 @@
                         <outlet property="nameLabel" destination="jVZ-w3-4yj" id="j5p-Sb-LAE"/>
                         <outlet property="nameStackView" destination="pjj-2b-bDY" id="rrU-Pi-6v0"/>
                         <outlet property="sendButton" destination="6ju-np-Koc" id="bDQ-MY-4zC"/>
-                        <outlet property="statusControl" destination="c4w-uz-Xe8" id="jWX-on-E9P"/>
-                        <outlet property="statusLabel" destination="Efq-jX-m2A" id="Fz2-ll-HBz"/>
-                        <outlet property="statusStackView" destination="6CO-Oq-8yy" id="jbH-xp-DsC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pt-F9-Unu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

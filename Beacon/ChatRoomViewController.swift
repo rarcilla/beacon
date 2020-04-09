@@ -31,7 +31,6 @@ class ChatRoomViewController: MessagesViewController, MCSessionDelegate, MCNearb
     var advertiser: MCNearbyServiceAdvertiser!
     private let appServiceType = "beacon-app"
     var textToSend: String?
-    var status: String?
     
     var messages: [MessageType] = []
     let refreshControl = UIRefreshControl()
