@@ -1,0 +1,6 @@
+module Pods_Beacon {
+  umbrella header "Pods-Beacon-umbrella.h"
+
+  export *
+  module * { export * }
+}

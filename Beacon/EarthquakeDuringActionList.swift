@@ -18,13 +18,13 @@ struct EarthquakeDuringActionList: View {
                 Text(emergency.duringActions[0].step)
                 Text(emergency.duringActions[1].step)
                 Text(emergency.duringActions[2].step)
-                Text(emergency.during)
+                Text(emergency.generalInfo)
                 .foregroundColor(.secondary)
                 .font(.subheadline)
                     .padding()
                 
             }
-            .navigationBarTitle("During An Earthquake")
+            .navigationBarTitle("Actions: During")
         }
     }
 }

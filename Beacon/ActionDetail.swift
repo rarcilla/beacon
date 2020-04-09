@@ -25,6 +25,7 @@ struct ActionDetail: View {
     @State var isOpen: Bool = false
     
     var body: some View {
+        NavigationView {
         ScrollView {
            GeometryReader { geometry in
                ZStack {
@@ -66,7 +67,7 @@ struct ActionDetail: View {
             .contextMenu{
                 VStack {
                     Button(action: {
-                        self.isOpen = true
+                        self.isOpen.toggle()
                     }, label: {
                         HStack {
                             Text("Prepare")
@@ -76,7 +77,7 @@ struct ActionDetail: View {
                         SecondView()
                     })
                     Button(action: {
-                        self.isOpen = true
+                        self.isOpen.toggle()
                     }, label: {
                         HStack {
                             Text("During")
@@ -86,7 +87,7 @@ struct ActionDetail: View {
                         ThirdView()
                     })
                     Button(action: {
-                        self.isOpen = true
+                        self.isOpen.toggle()
                     }, label: {
                         HStack {
                             Text("After")
@@ -97,6 +98,12 @@ struct ActionDetail: View {
                     })
                 }
             }
+            .padding()
+            NavigationLink (destination:
+            EarthquakeMain(emergency: emergency)) {
+                Text("Before, During, and After")
+                .bold()
+        }
         }
         
     }
@@ -126,5 +133,5 @@ struct ActionDetail_Previews: PreviewProvider {
         ActionDetail(emergency: emergencyData[0])
     }
 }
-
+}
 

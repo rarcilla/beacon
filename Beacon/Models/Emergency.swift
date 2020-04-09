@@ -58,14 +58,6 @@ struct Action: Hashable, Codable {
     var step: String
 }
 
-//struct ActionSet: Hashable, Codable {
-//    struct ActionStep: Hashable, Codable {
-//        var step: String
-//    }
-//
-//    var actionSet: [ActionStep]
-//}
-
 struct Coordinates: Hashable, Codable {
     var latitude: Double
     var longitude: Double

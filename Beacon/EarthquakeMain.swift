@@ -6,16 +6,32 @@
 //  Copyright © 2020 Regina Arcilla. All rights reserved.
 //
 
+
 import SwiftUI
 
 struct EarthquakeMain: View {
+    var emergency: Emergency
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List{
+                NavigationLink(destination: EarthquakeBeforeList(emergency: emergency)) {
+                    Text("Before")
+                }
+                NavigationLink(destination: EarthquakeDuringActionList(emergency: emergency)) {
+                    Text("During")
+                }
+                NavigationLink(destination: EarthquakeAfterList(emergency: emergency)) {
+                    Text("After")
+                }
+            }
+        .navigationBarTitle("Actions")
+        }
     }
 }
 
-struct EarthquakeMain_Previews: PreviewProvider {
+
+struct EarthquakeMain_Previews:PreviewProvider {
     static var previews: some View {
-        EarthquakeMain()
+        EarthquakeMain(emergency: emergencyData[0])
     }
 }

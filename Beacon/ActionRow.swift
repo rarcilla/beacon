@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ActionRow: View {
     var emergency: Emergency
-    
+//    var actionsArray: Array<Action>
     var body: some View {
         VStack {
             Group {
@@ -18,16 +18,7 @@ struct ActionRow: View {
                     emergency.image
                         .resizable()
                         .frame(width: 50, height: 50)
-                    Text(emergency.beforeActions[0].step)
-                    Spacer()
-                }
-            }
-            Group {
-                    HStack {
-                    emergency.image
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                    Text(emergency.beforeActions[0].step)
+                        Text(emergency.beforeSteps.first)
                     Spacer()
                 }
             }
