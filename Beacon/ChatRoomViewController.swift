@@ -117,6 +117,10 @@ extension ChatRoomViewController {
         advertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: appServiceType)
         advertiser.delegate = self
         advertiser.startAdvertisingPeer()
+        
+        let alert = UIAlertController(title: "You are now hosting a chatroom!", message: "Wait for peers to join to send messages.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
     
     func joinSession(_ action: UIAlertAction) {
