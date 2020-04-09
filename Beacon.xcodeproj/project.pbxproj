@@ -11,6 +11,10 @@
 		5F058F50243C3239000CEA5B /* EarthquakeAfterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */; };
 		5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */; };
 		5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */; };
+		5F9D0C77243EE722003DEBBB /* WildfireBeforeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D0C76243EE722003DEBBB /* WildfireBeforeList.swift */; };
+		5F9D0C79243EE7B4003DEBBB /* wildfireDuringList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D0C78243EE7B4003DEBBB /* wildfireDuringList.swift */; };
+		5F9D0C7C243EE9D9003DEBBB /* wildfireAfterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D0C7B243EE9D9003DEBBB /* wildfireAfterList.swift */; };
+		5F9D0C7E243EEABC003DEBBB /* WildfireActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D0C7D243EEABC003DEBBB /* WildfireActions.swift */; };
 		5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7548B243A6DE900647C31 /* LICENSE.txt */; };
 		5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */; };
 		5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75492243A70B400647C31 /* QuakeImage.swift */; };
@@ -40,6 +44,17 @@
 		5FC754C5243B926900647C31 /* ActionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C4243B926900647C31 /* ActionDetail.swift */; };
 		5FC754C7243B927B00647C31 /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C6243B927B00647C31 /* ActionRow.swift */; };
 		5FC754C9243BB56300647C31 /* ActionHeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754C8243BB56300647C31 /* ActionHeaderImage.swift */; };
+		5FEED80C243E65230001A71C /* stormBoats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED801243E65220001A71C /* stormBoats.jpg */; };
+		5FEED80D243E65230001A71C /* tsunamiBCZones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED802243E65220001A71C /* tsunamiBCZones.jpg */; };
+		5FEED80E243E65230001A71C /* wildfireVolunteer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED803243E65220001A71C /* wildfireVolunteer.jpeg */; };
+		5FEED80F243E65230001A71C /* tsunamiActionSteps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED804243E65220001A71C /* tsunamiActionSteps.jpg */; };
+		5FEED810243E65230001A71C /* firesmart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED805243E65220001A71C /* firesmart.jpg */; };
+		5FEED811243E65230001A71C /* volunteerWildfire.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED806243E65220001A71C /* volunteerWildfire.jpeg */; };
+		5FEED812243E65230001A71C /* wildfireIconRedCross.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED807243E65230001A71C /* wildfireIconRedCross.png */; };
+		5FEED813243E65230001A71C /* wavesOcean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED808243E65230001A71C /* wavesOcean.jpg */; };
+		5FEED814243E65230001A71C /* wildfireBannerBC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED809243E65230001A71C /* wildfireBannerBC.jpg */; };
+		5FEED815243E65230001A71C /* fireFighter.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED80A243E65230001A71C /* fireFighter.jpeg */; };
+		5FEED816243E65230001A71C /* tsunamiBannerBC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED80B243E65230001A71C /* tsunamiBannerBC.jpg */; };
 		7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5794B5241CD0D000BCD5CE /* Chat.storyboard */; };
 		7FCEFE18241DA6EE00011F37 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */; };
 		7FCEFE1A241DAECA00011F37 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEFE19241DAECA00011F37 /* NewViewController.swift */; };
@@ -58,6 +73,10 @@
 		5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAfterList.swift; sourceTree = "<group>"; };
 		5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeBeforeList.swift; sourceTree = "<group>"; };
 		5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeMain.swift; sourceTree = "<group>"; };
+		5F9D0C76243EE722003DEBBB /* WildfireBeforeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfireBeforeList.swift; sourceTree = "<group>"; };
+		5F9D0C78243EE7B4003DEBBB /* wildfireDuringList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wildfireDuringList.swift; sourceTree = "<group>"; };
+		5F9D0C7B243EE9D9003DEBBB /* wildfireAfterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wildfireAfterList.swift; sourceTree = "<group>"; };
+		5F9D0C7D243EEABC003DEBBB /* WildfireActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfireActions.swift; sourceTree = "<group>"; };
 		5FC7548B243A6DE900647C31 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergUIDetail.swift; sourceTree = "<group>"; };
 		5FC75492243A70B400647C31 /* QuakeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuakeImage.swift; sourceTree = "<group>"; };
@@ -87,6 +106,17 @@
 		5FC754C4243B926900647C31 /* ActionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDetail.swift; sourceTree = "<group>"; };
 		5FC754C6243B927B00647C31 /* ActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
 		5FC754C8243BB56300647C31 /* ActionHeaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHeaderImage.swift; sourceTree = "<group>"; };
+		5FEED801243E65220001A71C /* stormBoats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stormBoats.jpg; sourceTree = "<group>"; };
+		5FEED802243E65220001A71C /* tsunamiBCZones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tsunamiBCZones.jpg; sourceTree = "<group>"; };
+		5FEED803243E65220001A71C /* wildfireVolunteer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wildfireVolunteer.jpeg; sourceTree = "<group>"; };
+		5FEED804243E65220001A71C /* tsunamiActionSteps.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tsunamiActionSteps.jpg; sourceTree = "<group>"; };
+		5FEED805243E65220001A71C /* firesmart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firesmart.jpg; sourceTree = "<group>"; };
+		5FEED806243E65220001A71C /* volunteerWildfire.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volunteerWildfire.jpeg; sourceTree = "<group>"; };
+		5FEED807243E65230001A71C /* wildfireIconRedCross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wildfireIconRedCross.png; sourceTree = "<group>"; };
+		5FEED808243E65230001A71C /* wavesOcean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wavesOcean.jpg; sourceTree = "<group>"; };
+		5FEED809243E65230001A71C /* wildfireBannerBC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wildfireBannerBC.jpg; sourceTree = "<group>"; };
+		5FEED80A243E65230001A71C /* fireFighter.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fireFighter.jpeg; sourceTree = "<group>"; };
+		5FEED80B243E65230001A71C /* tsunamiBannerBC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tsunamiBannerBC.jpg; sourceTree = "<group>"; };
 		7F5794B5241CD0D000BCD5CE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		7FCEFE17241DA6EE00011F37 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		7FCEFE19241DAECA00011F37 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +152,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5F9D0C7A243EE98F003DEBBB /* Earthquake */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Earthquake;
+			sourceTree = "<group>";
+		};
 		5FC7548A243A6DE900647C31 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +181,11 @@
 		5FC75498243A723F00647C31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5FEED801243E65220001A71C /* stormBoats.jpg */,
+				5FEED804243E65220001A71C /* tsunamiActionSteps.jpg */,
+				5FEED80B243E65230001A71C /* tsunamiBannerBC.jpg */,
+				5FEED802243E65220001A71C /* tsunamiBCZones.jpg */,
+				5FEED808243E65230001A71C /* wavesOcean.jpg */,
 				5FC754B3243A72A600647C31 /* emergMenuData.json */,
 				5FC75499243A723F00647C31 /* quakeBanner.jpg */,
 				5FC7549A243A723F00647C31 /* earthquakeGraphic.jpg */,
@@ -151,6 +193,12 @@
 				5FC7549C243A723F00647C31 /* mammamia.jpeg */,
 				5FC7549D243A723F00647C31 /* EastVan.jpeg */,
 				5FC7549E243A723F00647C31 /* earthquakeIcon.png */,
+				5FEED80A243E65230001A71C /* fireFighter.jpeg */,
+				5FEED805243E65220001A71C /* firesmart.jpg */,
+				5FEED806243E65220001A71C /* volunteerWildfire.jpeg */,
+				5FEED809243E65230001A71C /* wildfireBannerBC.jpg */,
+				5FEED807243E65230001A71C /* wildfireIconRedCross.png */,
+				5FEED803243E65220001A71C /* wildfireVolunteer.jpeg */,
 				5FC7549F243A723F00647C31 /* wildfire.jpg */,
 				5FC754A0243A723F00647C31 /* unnamed.png */,
 				5FC754A1243A723F00647C31 /* covid.jpg */,
@@ -211,11 +259,15 @@
 				5FC75496243A716400647C31 /* EmergencyRow.swift */,
 				5FC754C0243AD8C700647C31 /* CategoryRow.swift */,
 				5FC754BA243A7BE000647C31 /* EmergencyList.swift */,
+				5F9D0C7A243EE98F003DEBBB /* Earthquake */,
 				5FC754C4243B926900647C31 /* ActionDetail.swift */,
 				5FC754C6243B927B00647C31 /* ActionRow.swift */,
 				5FC754C2243B915900647C31 /* ActionList.swift */,
 				5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */,
+				5F9D0C7D243EEABC003DEBBB /* WildfireActions.swift */,
 				5F058F4D243C2847000CEA5B /* EarthquakeDuringActionList.swift */,
+				5F9D0C76243EE722003DEBBB /* WildfireBeforeList.swift */,
+				5F9D0C7B243EE9D9003DEBBB /* wildfireAfterList.swift */,
 				5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */,
 				5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */,
 				7FE1632D2415F9E400D1323A /* SceneDelegate.swift */,
@@ -225,6 +277,7 @@
 				5FC75491243A70B400647C31 /* Supporting Views */,
 				5FC75498243A723F00647C31 /* Resources */,
 				7FE163342415F9E500D1323A /* Assets.xcassets */,
+				5F9D0C78243EE7B4003DEBBB /* wildfireDuringList.swift */,
 				7FE163392415F9E500D1323A /* Info.plist */,
 			);
 			path = Beacon;
@@ -300,22 +353,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC754B2243A723F00647C31 /* earthquake.jpg in Resources */,
+				5FEED80D243E65230001A71C /* tsunamiBCZones.jpg in Resources */,
 				7FE163382415F9E500D1323A /* LaunchScreen.storyboard in Resources */,
 				5FC754B1243A723F00647C31 /* firstaidkit.jpg in Resources */,
 				5FC754AC243A723F00647C31 /* wildfire.jpg in Resources */,
+				5FEED813243E65230001A71C /* wavesOcean.jpg in Resources */,
 				5FC754AD243A723F00647C31 /* unnamed.png in Resources */,
 				5FC754B0243A723F00647C31 /* download-1.jpg in Resources */,
 				7FE163352415F9E500D1323A /* Assets.xcassets in Resources */,
+				5FEED811243E65230001A71C /* volunteerWildfire.jpeg in Resources */,
 				7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */,
 				5FC754A8243A723F00647C31 /* download.jpg in Resources */,
 				5FC754AF243A723F00647C31 /* flood.jpg in Resources */,
 				5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */,
+				5FEED80E243E65230001A71C /* wildfireVolunteer.jpeg in Resources */,
+				5FEED80C243E65230001A71C /* stormBoats.jpg in Resources */,
+				5FEED816243E65230001A71C /* tsunamiBannerBC.jpg in Resources */,
+				5FEED80F243E65230001A71C /* tsunamiActionSteps.jpg in Resources */,
 				5FC754A9243A723F00647C31 /* mammamia.jpeg in Resources */,
 				5FC754A7243A723F00647C31 /* earthquakeGraphic.jpg in Resources */,
+				5FEED810243E65230001A71C /* firesmart.jpg in Resources */,
+				5FEED814243E65230001A71C /* wildfireBannerBC.jpg in Resources */,
 				5FC754B4243A72A600647C31 /* emergMenuData.json in Resources */,
 				5FC754AE243A723F00647C31 /* covid.jpg in Resources */,
 				7FE163332415F9E400D1323A /* Main.storyboard in Resources */,
+				5FEED815243E65230001A71C /* fireFighter.jpeg in Resources */,
 				5FC754AA243A723F00647C31 /* EastVan.jpeg in Resources */,
+				5FEED812243E65230001A71C /* wildfireIconRedCross.png in Resources */,
 				5FC754AB243A723F00647C31 /* earthquakeIcon.png in Resources */,
 				5FC754A6243A723F00647C31 /* quakeBanner.jpg in Resources */,
 			);
@@ -378,12 +442,16 @@
 				5FC754C3243B915A00647C31 /* ActionList.swift in Sources */,
 				5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */,
 				5FC754BF243ACA6300647C31 /* Home.swift in Sources */,
+				5F9D0C77243EE722003DEBBB /* WildfireBeforeList.swift in Sources */,
+				5F9D0C79243EE7B4003DEBBB /* wildfireDuringList.swift in Sources */,
+				5F9D0C7C243EE9D9003DEBBB /* wildfireAfterList.swift in Sources */,
 				5FC754C1243AD8C700647C31 /* CategoryRow.swift in Sources */,
 				5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */,
 				5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */,
 				5FC754BB243A7BE000647C31 /* EmergencyList.swift in Sources */,
 				5FC754C7243B927B00647C31 /* ActionRow.swift in Sources */,
 				5FC754B9243A734500647C31 /* Emergency.swift in Sources */,
+				5F9D0C7E243EEABC003DEBBB /* WildfireActions.swift in Sources */,
 				5FC754C9243BB56300647C31 /* ActionHeaderImage.swift in Sources */,
 				5FC75494243A70B400647C31 /* QuakeImage.swift in Sources */,
 				5F058F4E243C2847000CEA5B /* EarthquakeDuringActionList.swift in Sources */,

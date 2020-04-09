@@ -13,9 +13,9 @@
         "regionalInfo": "The most at-risk areas are along the west coast of the province, where the additional threat of a destructive tsunami is also very real. It’s important to take time to prepare and understand what to do before, during and after a major earthquake.",
         "before": "Make an earthquake safety plan",
         "beforeSteps": {
-            "first": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
-            "second": "Second",
-            "third": "Third"
+            "first": "Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
+            "second": "When disaster strikes, the most immediate help will come from those around you - your neighbours. Connecting and building relationships with them today will mean a better response and faster recovery.",
+            "third": "Take part in the Great British Columbia ShakeOut earthquake drill every October and practice what to do when the ground starts shaking."
         },
         "during": "Actions: In the event of an Earthquake",
         "duringSteps": {
@@ -80,7 +80,7 @@
         "safePlace": "Set designated meeting areas for your household(s) and/or workplace(s)",
         "generalInfo": "Many wildfires in B.C. occur far from cities and towns, but sometimes they threaten homes, businesses and vital infrastructure. Help keep your family safe by knowing what to do before, during and after a wildfire. You should also develop your emergency plan, put together your  grab-and go-bags and know the difference between an evacuation alert and order.",
         "regionalInfo": "The most at-risk areas are in the Okanagan",
-        "before": "Make an wildfire safety plan",
+        "before": "Make a wildfire safety plan",
         "beforeSteps": {
             "first": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
             "second": "2. Nearly half of all wildfires in B.C. are caused by human carelessness. You can prevent them by following a few simple rules: Check for bans and restrictions, Camp responsibly, and never leave a campfire unattended.",
@@ -275,5 +275,5 @@
             "latitude": 49.1400
         },
         "imageName": "flood"
-    }
+    },
 ]
