@@ -19,14 +19,13 @@ struct EmergUIDetail: View {
             
             CircleImage(image: emergency.image)
                 .offset(x: 0, y: -150)
-            
             VStack(alignment: .leading) {
                 Text(emergency.name)
                     .font(.title)
                 
                 Group {
                     HStack(alignment: .top){
-                        Text(emergency.subtitle)
+                        Text(emergency.city)
                             .font(.subheadline)
                         Spacer()
                         Text(emergency.category.rawValue)

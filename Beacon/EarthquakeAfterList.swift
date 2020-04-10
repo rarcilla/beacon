@@ -30,6 +30,6 @@ struct EarthquakeAfterList: View {
 
 struct EarthquakeAfterList_Previews: PreviewProvider {
     static var previews: some View {
-        EarthquakeAfterList(emergency: emergencyData[0])
+        EarthquakeAfterList(emergency: emergencyData[2])
     }
 }

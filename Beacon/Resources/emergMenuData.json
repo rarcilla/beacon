@@ -66,7 +66,8 @@
             "longitude": -123.116226,
             "latitude": 49.246292
         },
-        "imageName": "earthquake"
+        "imageName": "earthquake",
+        "imageName": "earthquakIcon"
     },
     {
         "name": "Wildfire",
@@ -135,7 +136,8 @@
             "longitude": -119.477829,
             "latitude": 49.882114
         },
-        "imageName": "wildfire"
+        "imageName": "wildfire",
+        "imageName": "fireFighter"
     },
     {
         "name": "COVID-19",
@@ -204,7 +206,8 @@
             "longitude": -123.123911,
             "latitude": 49.261798
         },
-        "imageName": "covid"
+        "imageName": "covid",
+        "imageName": "contagionMaskSolo"
     },
     {
         "name": "Flood",
@@ -274,6 +277,7 @@
             "longitude": -121.4600,
             "latitude": 49.1400
         },
-        "imageName": "flood"
+        "imageName": "flood",
+        "imageName": "floodReliefShelter"
     }
 ]

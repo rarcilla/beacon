@@ -27,7 +27,7 @@ struct CategoryRow: View {
 //                            destination: EmergUIDetail(
 //                                emergency: emergency
 //                            )
-                            destination: ActionDetail(emergency: emergencyData[0])
+                            destination: ActionDetail(emergency: emergency)
                         ) {
                             CategoryItem(emergency: emergency)
                         }
