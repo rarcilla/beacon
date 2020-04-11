@@ -11,7 +11,6 @@ import SwiftUI
 struct EarthquakeMain: View {
     var emergency: Emergency
     var body: some View {
-        NavigationView {
             List{
                 NavigationLink(destination: EarthquakeBeforeList(emergency: emergency)) {
                     Text("Before")
@@ -24,13 +23,14 @@ struct EarthquakeMain: View {
                 }
             }
         .navigationBarTitle("Actions")
-        }
     }
 }
 
 
 struct EarthquakeMain_Previews:PreviewProvider {
     static var previews: some View {
-        EarthquakeMain(emergency: emergencyData[1])
+        NavigationView {
+            EarthquakeMain(emergency: emergencyData[1])
+        }
     }
 }

@@ -24,9 +24,6 @@ struct CategoryRow: View {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.items) { emergency in
                         NavigationLink(
-//                            destination: EmergUIDetail(
-//                                emergency: emergency
-//                            )
                             destination: ActionDetail(emergency: emergency)
                         ) {
                             CategoryItem(emergency: emergency)
@@ -61,7 +58,7 @@ struct CategoryRow_Previews: PreviewProvider {
     static var previews: some View {
         CategoryRow(
             categoryName: emergencyData[0].category.rawValue,
-            items: Array(emergencyData.prefix(4))
+            items: Array(emergencyData.prefix(5))
         )
     }
 }

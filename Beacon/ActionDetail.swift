@@ -33,7 +33,6 @@ struct ActionDetail: View {
     @State var isOpen: Bool = false
     
     var body: some View {
-        NavigationView {
         ScrollView {
            GeometryReader { geometry in
                ZStack {
@@ -113,8 +112,6 @@ struct ActionDetail: View {
                 Text("Before, During, and After")
                 .bold()
         }
-        }
-        
     }
 }
 
@@ -139,7 +136,9 @@ var body: some View {
 
 struct ActionDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ActionDetail(emergency: emergencyData[2])
+        NavigationView{
+            ActionDetail(emergency: emergencyData[2])
+        }
     }
 }
 }

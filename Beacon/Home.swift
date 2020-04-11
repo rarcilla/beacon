@@ -40,7 +40,7 @@ struct CategoryHome: View {
                                 Text("See All")
                             }
                         }
-            .navigationBarTitle(Text("In Focus"))
+            .navigationBarTitle("In Focus")
         }
     }
 }

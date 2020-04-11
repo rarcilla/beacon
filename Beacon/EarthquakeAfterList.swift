@@ -17,7 +17,7 @@ struct EarthquakeAfterList: View {
             List {
                 Text(emergency.afterActions[0].step)
                 Text(emergency.afterActions[1].step)
-                Text(emergency.duringActions[2].step)
+                Text(emergency.afterActions[2].step)
                 Text(emergency.after)
                 .foregroundColor(.secondary)
                 .font(.subheadline)

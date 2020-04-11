@@ -11,6 +11,7 @@
 		5F058F50243C3239000CEA5B /* EarthquakeAfterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */; };
 		5F058F52243C3731000CEA5B /* EarthquakeBeforeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */; };
 		5F058F54243C38D8000CEA5B /* EarthquakeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */; };
+		5F71252324425CD4007A14B7 /* stormBoats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F71252224425CD4007A14B7 /* stormBoats.jpg */; };
 		5F85E128244103A2002F7A82 /* MapDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85E127244103A2002F7A82 /* MapDetail.swift */; };
 		5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7548B243A6DE900647C31 /* LICENSE.txt */; };
 		5FC75490243A6F1000647C31 /* EmergUIDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */; };
@@ -61,6 +62,7 @@
 		5F058F4F243C3239000CEA5B /* EarthquakeAfterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeAfterList.swift; sourceTree = "<group>"; };
 		5F058F51243C3731000CEA5B /* EarthquakeBeforeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeBeforeList.swift; sourceTree = "<group>"; };
 		5F058F53243C38D8000CEA5B /* EarthquakeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeMain.swift; sourceTree = "<group>"; };
+		5F71252224425CD4007A14B7 /* stormBoats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stormBoats.jpg; sourceTree = "<group>"; };
 		5F85E127244103A2002F7A82 /* MapDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetail.swift; sourceTree = "<group>"; };
 		5FC7548B243A6DE900647C31 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5FC7548E243A6F1000647C31 /* EmergUIDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergUIDetail.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		5FC75498243A723F00647C31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5F71252224425CD4007A14B7 /* stormBoats.jpg */,
 				5FC754B3243A72A600647C31 /* emergMenuData.json */,
 				5FC75499243A723F00647C31 /* quakeBanner.jpg */,
 				5FC7549A243A723F00647C31 /* earthquakeGraphic.jpg */,
@@ -319,6 +322,7 @@
 				5FC754A8243A723F00647C31 /* download.jpg in Resources */,
 				5FC754AF243A723F00647C31 /* flood.jpg in Resources */,
 				5FC7548C243A6DE900647C31 /* LICENSE.txt in Resources */,
+				5F71252324425CD4007A14B7 /* stormBoats.jpg in Resources */,
 				5FC754A9243A723F00647C31 /* mammamia.jpeg in Resources */,
 				5FC754A7243A723F00647C31 /* earthquakeGraphic.jpg in Resources */,
 				5FC754B4243A72A600647C31 /* emergMenuData.json in Resources */,
