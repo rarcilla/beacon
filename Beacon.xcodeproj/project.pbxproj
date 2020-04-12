@@ -24,13 +24,9 @@
 		5FC75495243A70B400647C31 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75493243A70B400647C31 /* MapView.swift */; };
 		5FC75497243A716400647C31 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC75496243A716400647C31 /* EmergencyRow.swift */; };
 		5FC754AA243A723F00647C31 /* EastVan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549D243A723F00647C31 /* EastVan.jpeg */; };
-		5FC754AB243A723F00647C31 /* earthquakeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549E243A723F00647C31 /* earthquakeIcon.png */; };
 		5FC754AC243A723F00647C31 /* wildfire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC7549F243A723F00647C31 /* wildfire.jpg */; };
-		5FC754AD243A723F00647C31 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A0243A723F00647C31 /* unnamed.png */; };
 		5FC754AE243A723F00647C31 /* covid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A1243A723F00647C31 /* covid.jpg */; };
 		5FC754AF243A723F00647C31 /* flood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A2243A723F00647C31 /* flood.jpg */; };
-		5FC754B0243A723F00647C31 /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A3243A723F00647C31 /* download-1.jpg */; };
-		5FC754B1243A723F00647C31 /* firstaidkit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A4243A723F00647C31 /* firstaidkit.jpg */; };
 		5FC754B2243A723F00647C31 /* earthquake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754A5243A723F00647C31 /* earthquake.jpg */; };
 		5FC754B4243A72A600647C31 /* emergMenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FC754B3243A72A600647C31 /* emergMenuData.json */; };
 		5FC754B8243A734500647C31 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC754B6243A734500647C31 /* Data.swift */; };
@@ -70,15 +66,11 @@
 		5FC7548B243A6DE900647C31 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5FC7548E243A6F1000647C31 /* MapDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
 		5FC75493243A70B400647C31 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		5FC75496243A716400647C31 /* EmergencyRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyRow.swift; path = "Supporting Views/EmergencyRow.swift"; sourceTree = "<group>"; };
+		5FC75496243A716400647C31 /* EmergencyRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyRow.swift; sourceTree = "<group>"; };
 		5FC7549D243A723F00647C31 /* EastVan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EastVan.jpeg; sourceTree = "<group>"; };
-		5FC7549E243A723F00647C31 /* earthquakeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earthquakeIcon.png; sourceTree = "<group>"; };
 		5FC7549F243A723F00647C31 /* wildfire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wildfire.jpg; sourceTree = "<group>"; };
-		5FC754A0243A723F00647C31 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
 		5FC754A1243A723F00647C31 /* covid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = covid.jpg; sourceTree = "<group>"; };
 		5FC754A2243A723F00647C31 /* flood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flood.jpg; sourceTree = "<group>"; };
-		5FC754A3243A723F00647C31 /* download-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download-1.jpg"; sourceTree = "<group>"; };
-		5FC754A4243A723F00647C31 /* firstaidkit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstaidkit.jpg; sourceTree = "<group>"; };
 		5FC754A5243A723F00647C31 /* earthquake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthquake.jpg; sourceTree = "<group>"; };
 		5FC754B3243A72A600647C31 /* emergMenuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emergMenuData.json; sourceTree = "<group>"; };
 		5FC754B6243A734500647C31 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -144,6 +136,7 @@
 		5FC75491243A70B400647C31 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				5FC75496243A716400647C31 /* EmergencyRow.swift */,
 				5FC75493243A70B400647C31 /* MapView.swift */,
 				5FC754BC243A811F00647C31 /* CircleImage.swift */,
 			);
@@ -162,13 +155,9 @@
 				5F71252224425CD4007A14B7 /* stormBoats.jpg */,
 				5FC754B3243A72A600647C31 /* emergMenuData.json */,
 				5FC7549D243A723F00647C31 /* EastVan.jpeg */,
-				5FC7549E243A723F00647C31 /* earthquakeIcon.png */,
 				5FC7549F243A723F00647C31 /* wildfire.jpg */,
-				5FC754A0243A723F00647C31 /* unnamed.png */,
 				5FC754A1243A723F00647C31 /* covid.jpg */,
 				5FC754A2243A723F00647C31 /* flood.jpg */,
-				5FC754A3243A723F00647C31 /* download-1.jpg */,
-				5FC754A4243A723F00647C31 /* firstaidkit.jpg */,
 				5FC754A5243A723F00647C31 /* earthquake.jpg */,
 			);
 			path = Resources;
@@ -220,9 +209,8 @@
 				5FC754BE243ACA6300647C31 /* Home.swift */,
 				5FC7548E243A6F1000647C31 /* MapDetailView.swift */,
 				5F85E127244103A2002F7A82 /* MapDetail.swift */,
-				5FC75496243A716400647C31 /* EmergencyRow.swift */,
-				5FC754C0243AD8C700647C31 /* CategoryRow.swift */,
 				5FC754BA243A7BE000647C31 /* EmergencyList.swift */,
+				5FC754C0243AD8C700647C31 /* CategoryRow.swift */,
 				7F4D2C7E243AD63A00F05CBF /* TabBarController.swift */,
 				7F4D2C80243ADB5600F05CBF /* ChildHostingController.swift */,
 				7FCEFE19241DAECA00011F37 /* PreChatViewController.swift */,
@@ -313,10 +301,7 @@
 				7FE163382415F9E500D1323A /* LaunchScreen.storyboard in Resources */,
 				5F71253124426FDC007A14B7 /* contagionCDCLab.jpg in Resources */,
 				5F71252D24426FDC007A14B7 /* covidCDCmicroVirus.jpg in Resources */,
-				5FC754B1243A723F00647C31 /* firstaidkit.jpg in Resources */,
 				5FC754AC243A723F00647C31 /* wildfire.jpg in Resources */,
-				5FC754AD243A723F00647C31 /* unnamed.png in Resources */,
-				5FC754B0243A723F00647C31 /* download-1.jpg in Resources */,
 				7FE163352415F9E500D1323A /* Assets.xcassets in Resources */,
 				7F5794B6241CD0D000BCD5CE /* Chat.storyboard in Resources */,
 				5FC754AF243A723F00647C31 /* flood.jpg in Resources */,
@@ -329,7 +314,6 @@
 				5F71253024426FDC007A14B7 /* covidBannerBC.png in Resources */,
 				7FE163332415F9E400D1323A /* Main.storyboard in Resources */,
 				5FC754AA243A723F00647C31 /* EastVan.jpeg in Resources */,
-				5FC754AB243A723F00647C31 /* earthquakeIcon.png in Resources */,
 				5F71252F24426FDC007A14B7 /* contagionMaskSolo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
