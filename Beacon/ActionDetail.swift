@@ -108,10 +108,10 @@ struct ActionDetail: View {
             }
             .padding()
             NavigationLink (destination:
-            EarthquakeMain(emergency: emergency)) {
+            ActionMain(emergency: emergency)) {
                 Text("Before, During, and After")
                 .bold()
-        }
+            }
     }
 }
 
@@ -119,19 +119,19 @@ struct ActionDetail: View {
 struct SecondView: View {
 @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 var body: some View {
-    EarthquakeBeforeList(emergency: emergencyData[0])
+    ActionBeforeList(emergency: emergencyData[0])
 }}
 
 struct ThirdView: View {
 @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 var body: some View {
-    EarthquakeDuringActionList(emergency: emergencyData[0])
+    ActionDuringList(emergency: emergencyData[0])
 }}
 
 struct FourthView: View {
 @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 var body: some View {
-    EarthquakeAfterList(emergency: emergencyData[0])
+    ActionAfterList(emergency: emergencyData[0])
 }}
 
 struct ActionDetail_Previews: PreviewProvider {

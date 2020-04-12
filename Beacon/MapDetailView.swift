@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct EmergUIDetail: View {
+struct MapDetailView: View {
     var emergency: Emergency
     
     var body: some View {
@@ -18,11 +18,12 @@ struct EmergUIDetail: View {
                 .frame(height: 200)
             
             CircleImage(image: emergency.image)
-                .offset(x: 0, y: -150)
+                .offset(x: 0, y: -50)
             VStack(alignment: .leading) {
+                
                 Text(emergency.name)
                     .font(.title)
-                
+                    
                 Group {
                     HStack(alignment: .top){
                         Text(emergency.city)
@@ -34,14 +35,17 @@ struct EmergUIDetail: View {
                 }
             }
             .padding()
+            .background(Color("BeaconYellow"))
             Spacer()
+            Text(emergency.regionalInfo)
+            .padding()
         }
         .navigationBarTitle(Text(emergency.name), displayMode: .inline)
     }
 }
 
-struct EmergUIDetail_Previews: PreviewProvider {
+struct MapDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EmergUIDetail(emergency: emergencyData[2])
+        MapDetailView(emergency: emergencyData[2])
     }
 }

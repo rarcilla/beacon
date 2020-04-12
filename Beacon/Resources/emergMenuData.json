@@ -294,13 +294,13 @@
             "second": "2. If you're in an area that is prone to flooding, or you just want to be proactive, there are a number of activities you can complete to prepare for a flood.",
             "third": "3. Store valuables and important items or documents in water-right containers or in higher places, like on a tall shelf or upper floor"
         },
-        "during": "How to prepare for a flood",
+        "during": "How to prepare for a Tsunami",
         "duringSteps": {
             "first": "You can stay safe during a flood by understanding flood advisories and warnings, evacuation stages, and actions you can take to protect yourself.",
             "second": "If flooding is imminent but you have not yet been instructed to evacuate: Monitor local radio stations, television news and social media for the latest information from your local authorities on sandbagging stations, possible evacuation procedures and routes.",
             "third": "If a flood warning is in effect, shut off electricity to areas that are at risk of flooding and move small appliances, electronics and smaller furniture to upper floors or areas not likely to be affected"
         },
-        "after": "After a flood & What to do when an Evacuation is rescinded",
+        "after": "After a Tsunami & What to do when an Evacuation is rescinded",
         "afterSteps": {
             "first": "Once officials determine the situation is safe, the evacuation order will be rescinded and you can return home. Continue to stay tuned for other possible evacuation alerts or orders.",
             "second": "Returning home after a flood can be overwhelming, but if you use caution and take things one step at a time, it is possible to recover and return your home to normal. Do not return home until authorities say it is safe to do so and they have cleared your home of any structural, electrical or other hazards",
@@ -345,5 +345,86 @@
             "latitude": 49.1400
         },
         "imageName": "stormBoats"
+    },
+    {
+        "name": "Influenza",
+        "subtitle": "Influenza, often called the flu, is an infection of the upper airway (the nose and throat), caused by an influenza virus.",
+        "category": "Contagion",
+        "city": "Vancouver",
+        "province": "British Columbia",
+        "id": 1006,
+        "isFeatured": true,
+        "isFavorite": true,
+        "safePlace": "Set designated meeting areas for your household(s) and/or workplace(s)",
+        "generalInfo": "The influenza virus is a highly changeable virus.         A person with influenza is at risk of other infections, including viral or bacterial pneumonia which is an infection of the lungs.",
+        "regionalInfo": " laboratory and clinical indicators ofinfluenza-like illness in BC have decreased substantially. Most clinical indicators are close to historic averages for this time of the year. Changes in health-care seeking behaviours and diagnostic testing practices during the COVID-19 pandemic should be taken into account in interpreting these indicators.",
+        "before": "Prevention is key",
+        "beforeSteps": {
+            "first": "1. Be prepared to be on your own for a minimum of three days to one week by developing your emergency plan, putting together your emergency kit and connect with your neighbours",
+            "second": "2. If you're in an area that is prone to flooding, or you just want to be proactive, there are a number of activities you can complete to prepare for a flood.",
+            "third": "3. Store valuables and important items or documents in water-right containers or in higher places, like on a tall shelf or upper floor"
+        },
+        "during": "During an outbreak",
+        "duringSteps": {
+            "first": "You can stay safe during a flood by understanding flood advisories and warnings, evacuation stages, and actions you can take to protect yourself.",
+            "second": "If flooding is imminent but you have not yet been instructed to evacuate: Monitor local radio stations, television news and social media for the latest information from your local authorities on sandbagging stations, possible evacuation procedures and routes.",
+            "third": "If a flood warning is in effect, shut off electricity to areas that are at risk of flooding and move small appliances, electronics and smaller furniture to upper floors or areas not likely to be affected"
+        },
+        "after": "After the flu",
+        "afterSteps": {
+            "first": "Once officials determine the situation is safe, the evacuation order will be rescinded and you can return home. Continue to stay tuned for other possible evacuation alerts or orders.",
+            "second": "Returning home after a flood can be overwhelming, but if you use caution and take things one step at a time, it is possible to recover and return your home to normal. Do not return home until authorities say it is safe to do so and they have cleared your home of any structural, electrical or other hazards",
+            "third": "Ensure your electricity has been turned off. Do NOT attempt to turn the power back on in your home until the wiring has been inspected by a professional"
+        },
+        "beforeActions": [
+            {
+                "step": "You can reduce the risk of catching influenza or spreading it to others, by washing your hands regularly, eating well, exercising, and getting the influenza vaccine."
+            },
+            {
+                "step": "Influenza vaccine, also known as the flu shot, may help prevent you from getting sick with influenza or from spreading it to others."
+            },
+            {
+                "step": "In BC, the vaccine is available in October or early November. If you choose to get the influenza vaccine, it is best to try to get it by the end of November to allow your body enough time - about two weeks - to build immunity before the influenza season starts. However, the vaccine may be given at any time during the season."
+            }
+        ],
+        "duringActions": [
+            {
+                "step": "Influenza symptoms can include fever, headache, muscle pain, runny nose, sore throat, extreme tiredness, and cough. Although colds and other viruses may cause similar symptoms, those due to the influenza virus tend to be worse."
+            },
+            {
+                "step": "Symptoms can begin about one to four days (on average two days) after a person is first exposed to the influenza virus. Fever and other symptoms can usually last 7 to 10 days, with the cough and weakness lasting up to two more weeks."
+            },
+            {
+                "step": "In children, gastrointestinal  symptoms such as nausea, vomiting and diarrhea may accompany the respiratory phase"
+                
+            },
+            {
+                "step": "If you do get sick with the flu, home treatment can help to ease symptoms."
+                
+            },
+            {
+                "step": "Get plenty of rest. Bed rest will also help you avoid spreading the virus to others."
+                
+            },
+            {
+                "step": "If you do not start to feel better in a few days or your symptoms get worse, you should see a doctor. Call a doctor if you get sick and you have the following health concerns: Heart or lung disease, Any chronic health concern that requires regular medical attention, An immune system weakened by disease or medical treatment, or You are frail or at risk of serious illness or complications"
+            }
+        ],
+        "afterActions": [
+            {
+                "step": "Listen to local alerts for possible outbreaks."
+            },
+            {
+                "step": "Get rest."
+            },
+            {
+                "step": "Continue to monitor your condition for any changes"
+            }
+        ],
+        "coordinates": {
+            "longitude": -121.4600,
+            "latitude": 49.1400
+        },
+        "imageName": "contagionVaccination"
     }
 ]

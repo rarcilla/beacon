@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct EarthquakeAfterList: View {
+struct ActionAfterList: View {
     var emergency: Emergency
     
     
@@ -16,11 +16,15 @@ struct EarthquakeAfterList: View {
                 NavigationView {
             List {
                 Text(emergency.afterActions[0].step)
+                .listRowBackground(Color("BeaconYellow").opacity(0.75))
                 Text(emergency.afterActions[1].step)
+                .listRowBackground(Color("BeaconTurquoise").opacity(0.75))
                 Text(emergency.afterActions[2].step)
+                .listRowBackground(Color("BeaconRed").opacity(0.75))
                 Text(emergency.after)
                 .foregroundColor(.secondary)
                 .font(.subheadline)
+                    .fontWeight(.medium)
                     .padding()
             }
             .navigationBarTitle("In the Aftermath")
@@ -28,8 +32,8 @@ struct EarthquakeAfterList: View {
     }
 }
 
-struct EarthquakeAfterList_Previews: PreviewProvider {
+struct ActionAfterList_Previews: PreviewProvider {
     static var previews: some View {
-        EarthquakeAfterList(emergency: emergencyData[2])
+        ActionAfterList(emergency: emergencyData[2])
     }
 }

@@ -39,6 +39,6 @@ struct MapDetail: View {
 
 struct MapDetail_Previews: PreviewProvider {
     static var previews: some View {
-        EmergUIDetail(emergency: emergencyData[1])
+        MapDetailView(emergency: emergencyData[1])
     }
 }

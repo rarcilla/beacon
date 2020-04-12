@@ -17,7 +17,6 @@ struct CategoryHome: View {
         )
     }
     
-    
     var featured: [Emergency] {
         emergencyData.filter { $0.isFeatured }
     }
@@ -37,8 +36,8 @@ struct CategoryHome: View {
                             .listRowInsets(EdgeInsets())
                 
                         NavigationLink(destination: EmergencyList()) {
-                                Text("See All")
-                            }
+                                Text("See Regional Info")
+                }
                         }
             .navigationBarTitle("In Focus")
         }

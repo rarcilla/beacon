@@ -56,9 +56,11 @@ struct CategoryItem: View {
 
 struct CategoryRow_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         CategoryRow(
             categoryName: emergencyData[0].category.rawValue,
             items: Array(emergencyData.prefix(5))
         )
+        }
     }
 }

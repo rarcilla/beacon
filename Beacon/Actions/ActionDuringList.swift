@@ -1,5 +1,5 @@
 //
-//  EarthquakeDuringActionList.swift
+//  ActionDuringList.swift
 //  Beacon
 //
 //  Created by Mike Powar on 2020-04-06.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct EarthquakeDuringActionList: View {
+struct ActionDuringList: View {
     var emergency: Emergency
     
     
@@ -16,21 +16,25 @@ struct EarthquakeDuringActionList: View {
                 NavigationView {
             List {
                 Text(emergency.duringActions[0].step)
+                .listRowBackground(Color("BeaconRed").opacity(0.75))
                 Text(emergency.duringActions[1].step)
+                .listRowBackground(Color("BeaconYellow").opacity(0.75))
                 Text(emergency.duringActions[2].step)
+                .listRowBackground(Color("BeaconTurquoise").opacity(0.75))
                 Text(emergency.during)
-                .foregroundColor(.secondary)
-                .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .font(.subheadline)
+                    .fontWeight(.medium)
                     .padding()
                 
             }
-            .navigationBarTitle("During An Earthquake")
+            .navigationBarTitle("During")
         }
     }
 }
 
 struct EarthquakeDuringActionList_Previews: PreviewProvider {
     static var previews: some View {
-        EarthquakeDuringActionList(emergency: emergencyData[0])
+        ActionDuringList(emergency: emergencyData[0])
     }
 }
