@@ -1,5 +1,5 @@
 # Beacon
-An iOS app that facilitates short range communication during natural disasters using infrastructure Wi-Fi, peer-to-peer Wi-Fi, and Ethernet. In addition, Beacon also (statically) provides information regarding emergency procedures for different disasters.
+An iOS app that facilitates short range communication during natural disasters using infrastructure Wi-Fi, peer-to-peer Wi-Fi, and Bluetooth. In addition, Beacon also (statically) provides information regarding emergency procedures for different disasters.
 
 ## "App Store" Pitch 
 Hazard? In the midst of an emergency? No internet? Beacon will connect you with those around you so you can get help if you need it or give help if you are able.
